@@ -1,6 +1,6 @@
 # Hi there, I'm Oscar David Valencia Alvarez 👋
 
-## Software Engineering Student | Full-Stack Developer
+## Software Engineer | Full-Stack Developer
 
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:davidvalencia0526@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-linkedin-profile-url/)
@@ -9,7 +9,7 @@
 
 ## 👨‍💻 About Me
 
-I am a Software Engineering student at **Universidad Surcolombiana**, passionate about creating efficient, scalable, and high-impact technological solutions, with a special interest in the field of **Artificial Intelligence**.
+I am a recent Software Engineering graduate from **Universidad Surcolombiana**, passionate about creating efficient, scalable, and high-impact technological solutions, with a special interest in the field of **Artificial Intelligence**.
 
 - 🔭 I have a solid academic background in **full-stack development**, covering the entire software lifecycle: from requirements gathering, architecture design, and database modeling to MVP creation, implementation, and deployment of web and mobile applications.
 - 🌱 My strengths include a strong logical-analytical mindset, adaptability, and a deep commitment to quality.
@@ -56,7 +56,7 @@ Here are some of the technologies I've been working with:
 
 - **Bachelor of Science in Software Engineering**
   - Universidad Surcolombiana, Neiva, Colombia
-  - *August 2020 - June 2025 (Expected)*
+  - *August 2020 - June 2024*
 
 - **Technical Degree in Multimedia Production**
   - SENA, Colombia
