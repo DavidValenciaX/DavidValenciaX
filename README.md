@@ -2,8 +2,7 @@
 
 ## Full-Stack Developer
 
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/oscar-david-valencia-alvarez-3b26321a3/)
-[![GitHub Badge](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/DavidValenciaX)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/oscar-david-valencia-alvarez-3b26321a3/) [![GitHub Badge](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/DavidValenciaX) [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:davidvalencia0526@gmail.com)
 
 ---
 
@@ -36,20 +35,6 @@ I am a Software Engineering student at **Universidad Surcolombiana**, passionate
 | **Project 1**                                                     | A brief description of your project.                                                                                                   | [Live Demo](https://example.com) - [GitHub Repo](https://github.com/DavidValenciaX/project1)                                                                                                                  |
 | **Project 2**                                                   | A brief description of your project.                                                                                                   | [Live Demo](https://example.com) - [GitHub Repo](https://github.com/DavidValenciaX/project2)                                                                                                                  |
 | **Project 3**                                                         | A brief description of your project.                                                                                                   | [Live Demo](https://example.com) - [GitHub Repo](https://github.com/DavidValenciaX/project3)                                                                                                                  |
-
----
-
-### 💼 Work Experience
-
-**Company Name** | **Position** | **Dates**
-
-- Brief description of your responsibilities and achievements.
-- Used technologies: `React`, `Node.js`, `MongoDB`.
-
-**Company Name** | **Position** | **Dates**
-
-- Brief description of your responsibilities and achievements.
-- Used technologies: `Python`, `Django`, `PostgreSQL`.
 
 ---
 
