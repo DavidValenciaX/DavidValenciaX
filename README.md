@@ -6,9 +6,9 @@
 
 ---
 
-### About Me
+## 👨‍💻 About Me
 
-I am a Software Engineering student at **Universidad Surcolombiana**, passionate about creating efficient, scalable, and high-impact technological solutions, with a special interest in the field of **Artificial Intelligence**.
+I am a recent Software Engineering graduate from **Universidad Surcolombiana**, passionate about creating efficient, scalable, and high-impact technological solutions, with a special interest in the field of **Artificial Intelligence**.
 
 - 🔭 I have a solid academic background in **full-stack development**, covering the entire software lifecycle: from requirements gathering, architecture design, and database modeling to MVP creation, implementation, and deployment of web and mobile applications.
 - 🌱 My strengths include a strong logical-analytical mindset, adaptability, and a deep commitment to quality.
@@ -17,7 +17,9 @@ I am a Software Engineering student at **Universidad Surcolombiana**, passionate
 
 ---
 
-### 💻 Tech Stack
+## 🛠️ Tech Stack & Skills
+
+Here are some of the technologies I've been working with:
 
 | Category          | Technologies                                                                                                                                                                                                    |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -28,7 +30,7 @@ I am a Software Engineering student at **Universidad Surcolombiana**, passionate
 
 ---
 
-### 🚀 Projects
+## 🚀 Projects
 
 | Project                                                               | Description                                                                                                                            | Live Demo / Repo                                                                                                                                                                                                   |
 | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -38,7 +40,7 @@ I am a Software Engineering student at **Universidad Surcolombiana**, passionate
 
 ---
 
-### 🎓 Education
+## 🎓 Education
 
 - **Bachelor of Science in Software Engineering**
   - Universidad Surcolombiana, Neiva, Colombia
@@ -49,7 +51,7 @@ I am a Software Engineering student at **Universidad Surcolombiana**, passionate
 
 ---
 
-### 📜 Certifications
+## 📜 Certifications
 
 - **Certificate in Mobile Application Development** | *Ministerio de las TIC* (Dec 2022)
 - **Certificate in Basic Java Programming** | *Ministerio de las TIC* (Sep 2022)
@@ -59,14 +61,14 @@ I am a Software Engineering student at **Universidad Surcolombiana**, passionate
 
 ---
 
-### 📊 GitHub Stats
+## 📊 GitHub Stats
 
 ![David's GitHub stats](https://github-readme-stats.vercel.app/api?username=DavidValenciaX&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DavidValenciaX&layout=compact&theme=radical)
 
 ---
 
-### 📈 Contribution Graph
+## 📈 Contribution Graph
 
 ![David's GitHub Contribution Graph](https://ghchart.rshah.org/DavidValenciaX?theme=dark)
 
