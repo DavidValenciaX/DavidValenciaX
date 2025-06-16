@@ -65,4 +65,7 @@ I am a Software Engineering student at **Universidad Surcolombiana**, passionate
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DavidValenciaX&layout=compact&theme=radical)
 
 ---
-![snake](https://raw.githubusercontent.com/DavidValenciaX/DavidValenciaX/main/github-contribution-grid-snake.svg)
+
+### 📈 Contribution Graph
+
+![David's GitHub Contribution Graph](https://ghchart.rshah.org/DavidValenciaX?theme=dark)
