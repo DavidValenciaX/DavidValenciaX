@@ -32,11 +32,21 @@ Here are some of the technologies I've been working with:
 
 ## 🚀 Projects
 
-| Project                                                               | Description                                                                                                                            | Live Demo / Repo                                                                                                                                                                                                   |
-| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Project 1**                                                     | A brief description of your project.                                                                                                   | [Live Demo](https://example.com) - [GitHub Repo](https://github.com/DavidValenciaX/project1)                                                                                                                  |
-| **Project 2**                                                   | A brief description of your project.                                                                                                   | [Live Demo](https://example.com) - [GitHub Repo](https://github.com/DavidValenciaX/project2)                                                                                                                  |
-| **Project 3**                                                         | A brief description of your project.                                                                                                   | [Live Demo](https://example.com) - [GitHub Repo](https://github.com/DavidValenciaX/project3)                                                                                                                  |
+### Project 1: Awesome App
+
+- **Description:** A brief description of the project, its purpose, and the problem it solves.
+- **Tech Stack:** React, Java (Spring Boot), PostgreSQL, Docker.
+- **[Live Demo](link-to-demo)**
+- **[GitHub Repository](link-to-repo)**
+
+### Project 2: AI-Powered Tool
+
+- **Description:** A brief description of the project, its purpose, and the problem it solves.
+- **Tech Stack:** Python (Flask), TensorFlow, JavaScript.
+- **[Live Demo](link-to-demo)**
+- **[GitHub Repository](link-to-repo)**
+
+*More projects coming soon!*
 
 ---
 
