@@ -40,9 +40,22 @@ I am a Software Engineering student at **Universidad Surcolombiana**, passionate
 
 ### 🎓 Education
 
-**Institution Name** | **Degree** | **Dates**
+- **Bachelor of Science in Software Engineering**
+  - Universidad Surcolombiana, Neiva, Colombia
+  - *August 2020 - June 2024*
+- **Technical Degree in Multimedia Production**
+  - SENA, Colombia
+  - *February 2018 - January 2020*
 
-- Relevant coursework or projects.
+---
+
+### 📜 Certifications
+
+- **Certificate in Mobile Application Development** | *Ministerio de las TIC* (Dec 2022)
+- **Certificate in Basic Java Programming** | *Ministerio de las TIC* (Sep 2022)
+- **Certificate in Python Programming Fundamentals** | *Ministerio de las TIC* (Jul 2022)
+- **Scrum Fundamentals Certified (SFC)** | *Vmedu Inc.* (May 2022)
+- **Basic English 1: Elementary** | *King's College London* (Apr 2021)
 
 ---
 

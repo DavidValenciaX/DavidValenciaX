@@ -54,11 +54,9 @@ Here are some of the technologies I've been working with:
 ## 🎓 Education
 
 - **Bachelor of Science in Software Engineering**
-
   - Universidad Surcolombiana, Neiva, Colombia
   - *August 2020 - June 2024*
 - **Technical Degree in Multimedia Production**
-
   - SENA, Colombia
   - *February 2018 - January 2020*
 
