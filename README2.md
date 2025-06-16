@@ -15,6 +15,8 @@ I am a recent Software Engineering graduate from **Universidad Surcolombiana**, 
 - 🚀 I thrive in collaborative environments, applying **Agile methodologies**, version control with **Git**, and project management tools to deliver value and solve complex problems.
 - 📫 My goal is to join an innovative team where I can contribute tangible value and grow as a professional.
 
+---
+
 ## 🛠️ Tech Stack & Skills
 
 Here are some of the technologies I've been working with:
@@ -25,6 +27,7 @@ Here are some of the technologies I've been working with:
 | **Backend**       | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)                                                                                                                          |
 | **Databases**     | ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)                                                                                                                                                                                                                                                                                             |
 | **Tools, Platforms & Methodologies** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white) ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white) ![Scrum](https://img.shields.io/badge/Scrum-009688?style=flat-square&logo=trello&logoColor=white)                                                                                                                                                                                                                                                                                                             |
+---
 
 ## 🚀 Projects
 
@@ -42,6 +45,8 @@ Here are some of the technologies I've been working with:
 
 *More projects coming soon!*
 
+---
+
 ## 🎓 Education
 
 - **Bachelor of Science in Software Engineering**
@@ -51,6 +56,8 @@ Here are some of the technologies I've been working with:
   - SENA, Colombia
   - *February 2018 - January 2020*
 
+---
+
 ## 📜 Certifications
 
 - **Certificate in Mobile Application Development** | *Ministerio de las TIC* (Dec 2022)
@@ -58,6 +65,21 @@ Here are some of the technologies I've been working with:
 - **Certificate in Python Programming Fundamentals** | *Ministerio de las TIC* (Jul 2022)
 - **Scrum Fundamentals Certified (SFC)** | *Vmedu Inc.* (May 2022)
 - **Basic English 1: Elementary** | *King's College London* (Apr 2021)
+
+---
+
+### 📊 GitHub Stats
+
+![David's GitHub stats](https://github-readme-stats.vercel.app/api?username=DavidValenciaX&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DavidValenciaX&layout=compact&theme=radical)
+
+---
+
+### 📈 Contribution Graph
+
+![David's GitHub Contribution Graph](https://ghchart.rshah.org/DavidValenciaX?theme=dark)
+
+---
 
 ## 🌐 Languages
 
