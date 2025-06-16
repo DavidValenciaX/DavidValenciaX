@@ -69,3 +69,10 @@ I am a Software Engineering student at **Universidad Surcolombiana**, passionate
 ### 📈 Contribution Graph
 
 ![David's GitHub Contribution Graph](https://ghchart.rshah.org/DavidValenciaX?theme=dark)
+
+---
+
+## 🌐 Languages
+
+- **Spanish:** Native
+- **English:** Intermediate
