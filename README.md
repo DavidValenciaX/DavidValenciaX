@@ -44,6 +44,13 @@ Here are some of the technologies I've been working with:
 - **Tech Stack:** Kotlin, TensorFlow Lite.
 - **[GitHub Repository](https://github.com/DavidValenciaX/BananaRipenessApp)**
 
+### printNelsy: Image Printing Assistant
+
+- **Description:** A web application for manipulating, organizing, and printing images using Fabric.js. Created with love for my mother Maria Nelsy and our family business "Papelería Nelsy". Features include multiple image upload, drag & drop support, image manipulation (resize, rotate, crop, effects), layout creation (collages, grids), and optimized printing with different paper sizes and orientations.
+- **Tech Stack:** HTML5, CSS3, JavaScript ES6+, Fabric.js, SweetAlert2, Font Awesome.
+- **[Live Demo](https://print-nelsy.vercel.app/)**
+- **[GitHub Repository](https://github.com/DavidValenciaX/printNelsy)**
+
 ### horarios_app: Web-Based Schedule Manager
 
 - **Description:** A full-stack web application for creating and managing schedules. It demonstrates my skills in building interactive user interfaces and backend logic for a practical use case.
