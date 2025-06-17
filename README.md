@@ -32,21 +32,24 @@ Here are some of the technologies I've been working with:
 
 ## 🚀 Projects
 
-### Project 1: Awesome App
+### tomatoSwinTransformerApp: AI-Powered Plant Disease Classification
 
-- **Description:** A brief description of the project, its purpose, and the problem it solves.
-- **Tech Stack:** React, Java (Spring Boot), PostgreSQL, Docker.
-- **[Live Demo](link-to-demo)**
-- **[GitHub Repository](link-to-repo)**
+- **Description:** A web application leveraging a Swin Transformer model to classify tomato plant diseases from images. This project showcases my skills in computer vision, deep learning, and model deployment.
+- **Tech Stack:** Python, TensorFlow/PyTorch, HTML/CSS, JavaScript.
+- **[GitHub Repository](https://github.com/DavidValenciaX/tomatoSwinTransformerApp)**
 
-### Project 2: AI-Powered Tool
+### BananaRipenessApp: Mobile Ripeness Detection
 
-- **Description:** A brief description of the project, its purpose, and the problem it solves.
-- **Tech Stack:** Python (Flask), TensorFlow, JavaScript.
-- **[Live Demo](link-to-demo)**
-- **[GitHub Repository](link-to-repo)**
+- **Description:** A mobile application (Android) that uses machine learning to determine the ripeness stage of bananas from a photo. It highlights my abilities in mobile development and practical AI application.
+- **Tech Stack:** Kotlin, TensorFlow Lite.
+- **[GitHub Repository](https://github.com/DavidValenciaX/BananaRipenessApp)**
 
-*More projects coming soon!*
+### horarios_app: Web-Based Schedule Manager
+
+- **Description:** A full-stack web application for creating and managing schedules. It demonstrates my skills in building interactive user interfaces and backend logic for a practical use case.
+- **Tech Stack:** JavaScript, Node.js, Express, React.
+- **[Live Demo](https://horarios-application.netlify.app/)**
+- **[GitHub Repository](https://github.com/DavidValenciaX/horarios_app)**
 
 ---
 
