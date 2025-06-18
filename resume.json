@@ -1,5 +1,4 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
     "basics": {
       "name": "Oscar David Valencia Alvarez",
       "label": "Ingeniero de software",
@@ -16,8 +15,8 @@
       "profiles": [
         {
           "network": "Github",
-          "username": "DavidValencia",
-          "url": "https://github.com/DavidValencia"
+          "username": "DavidValenciaX",
+          "url": "https://github.com/DavidValenciaX"
         },
         {
           "network": "LinkedIn",
@@ -86,23 +85,46 @@
     "publications": [],
     "skills": [
       {
-        "name": "Desarrollo de Software y Tecnologías",
+        "name": "Frontend",
         "level": "",
         "keywords": [
-          "React",
-          "PHP",
-          "AWS",
-          "Docker",
-          "Github",
-          "GIT",
-          "Figma",
-          "Scrum",
-          "C++",
-          "Java",
-          "Python",
+          "HTML5",
+          "CSS3",
           "JavaScript",
-          "CSS",
-          "HTML"
+          "React"
+        ]
+      },
+      {
+        "name": "Backend",
+        "level": "",
+        "keywords": [
+          "Java",
+          "Node.js",
+          "Express",
+          "Python",
+          "Django",
+          "PHP"
+        ]
+      },
+      {
+        "name": "Bases de Datos",
+        "level": "",
+        "keywords": [
+          "PostgreSQL",
+          "MongoDB",
+          "MySQL"
+        ]
+      },
+      {
+        "name": "Herramientas, Plataformas y Metodologías",
+        "level": "",
+        "keywords": [
+          "Git",
+          "GitHub",
+          "Docker",
+          "AWS",
+          "Figma",
+          "Scrum"
         ]
       }
     ],
@@ -113,10 +135,110 @@
       },
       {
         "language": "Inglés",
-        "fluency": "Básico (Elementary)"
+        "fluency": "Intermedio"
       }
     ],
     "interests": [],
     "references": [],
-    "projects": []
+    "projects": [
+      {
+        "name": "tomatoSwinTransformerApp: Clasificación de Enfermedades de Plantas con IA",
+        "description": "Una aplicación web que utiliza un modelo Swin Transformer para clasificar enfermedades de plantas de tomate a partir de imágenes. Este proyecto demuestra mis habilidades en visión por computadora, aprendizaje profundo y despliegue de modelos.",
+        "highlights": [
+          "Implementación de modelo Swin Transformer",
+          "Clasificación de enfermedades en plantas",
+          "Despliegue de modelos de IA"
+        ],
+        "keywords": [
+          "Python",
+          "TensorFlow/PyTorch",
+          "HTML/CSS",
+          "JavaScript",
+          "Inteligencia Artificial",
+          "Visión por Computadora"
+        ],
+        "startDate": "",
+        "endDate": "",
+        "url": "https://github.com/DavidValenciaX/tomatoSwinTransformerApp",
+        "roles": [
+          "Desarrollador Full-Stack"
+        ],
+        "entity": "Proyecto Personal",
+        "type": "application"
+      },
+      {
+        "name": "BananaRipenessApp: Detección Móvil de Madurez",
+        "description": "Una aplicación móvil (Android) que utiliza aprendizaje automático para determinar el estado de madurez de los plátanos a partir de una foto. Destaca mis habilidades en desarrollo móvil y aplicación práctica de IA.",
+        "highlights": [
+          "Desarrollo de aplicación Android nativa",
+          "Implementación de TensorFlow Lite",
+          "Detección de madurez mediante IA"
+        ],
+        "keywords": [
+          "Kotlin",
+          "TensorFlow Lite",
+          "Android",
+          "Machine Learning",
+          "Desarrollo Móvil"
+        ],
+        "startDate": "",
+        "endDate": "",
+        "url": "https://github.com/DavidValenciaX/BananaRipenessApp",
+        "roles": [
+          "Desarrollador Android"
+        ],
+        "entity": "Proyecto Personal",
+        "type": "application"
+      },
+      {
+        "name": "printNelsy: Asistente de Impresión de Imágenes",
+        "description": "Una aplicación web para manipular, organizar e imprimir imágenes usando Fabric.js. Creada con amor para mi madre María Nelsy y nuestro negocio familiar 'Papelería Nelsy'. Incluye funciones de carga múltiple de imágenes, soporte de arrastrar y soltar, manipulación de imágenes (redimensionar, rotar, recortar, efectos), creación de diseños (collages, cuadrículas) e impresión optimizada con diferentes tamaños y orientaciones de papel.",
+        "highlights": [
+          "Manipulación avanzada de imágenes con Fabric.js",
+          "Interfaz intuitiva de arrastrar y soltar",
+          "Optimización para impresión",
+          "Creación de collages y cuadrículas"
+        ],
+        "keywords": [
+          "HTML5",
+          "CSS3",
+          "JavaScript ES6+",
+          "Fabric.js",
+          "SweetAlert2",
+          "Font Awesome"
+        ],
+        "startDate": "",
+        "endDate": "",
+        "url": "https://github.com/DavidValenciaX/printNelsy",
+        "roles": [
+          "Desarrollador Frontend"
+        ],
+        "entity": "Proyecto Personal/Familiar",
+        "type": "application"
+      },
+      {
+        "name": "horarios_app: Gestor de Horarios Basado en Web",
+        "description": "Una aplicación web full-stack para crear y gestionar horarios. Demuestra mis habilidades en la construcción de interfaces de usuario interactivas y lógica de backend para un caso de uso práctico.",
+        "highlights": [
+          "Desarrollo full-stack completo",
+          "Interfaz de usuario interactiva",
+          "Gestión de horarios automatizada"
+        ],
+        "keywords": [
+          "JavaScript",
+          "Node.js",
+          "Express",
+          "React",
+          "Full-Stack Development"
+        ],
+        "startDate": "",
+        "endDate": "",
+        "url": "https://github.com/DavidValenciaX/horarios_app",
+        "roles": [
+          "Desarrollador Full-Stack"
+        ],
+        "entity": "Proyecto Personal",
+        "type": "application"
+      }
+    ]
   }
