@@ -5,7 +5,6 @@
       "image": "",
       "email": "davidvalencia0526@gmail.com",
       "phone": "+57 317 374 3023",
-      "url": "",
       "summary": "Ingeniero de software egresado de la Universidad Surcolombiana, apasionado por crear soluciones tecnológicas eficientes, escalables y de alto impacto, con un especial interés en el campo de la Inteligencia Artificial. Me destaco por mi pensamiento analítico, adaptabilidad y compromiso con la alta calidad. Poseo una experiencia académica sólida en arquitectura y desarrollo full-stack, abarcando todo el ciclo de vida del software, incluyendo la toma de requerimientos, el diseño y modelado de arquitectura y bases de datos, la creación de MVPs, el desarrollo, implementación y despliegue de aplicaciones web y móviles. Siempre aplicando principios de metodologías ágiles en entornos de trabajo colaborativo, con control de versiones y herramientas de gestión de proyectos. Mi objetivo es integrarme en un equipo innovador donde pueda aportar valor real y contribuir a la resolución de problemas complejos.",
       "location": {
         "city": "Neiva",
@@ -30,7 +29,6 @@
     "education": [
       {
         "institution": "Universidad Surcolombiana",
-        "url": "",
         "area": "Ingeniería de software",
         "studyType": "Grado en Ingeniería",
         "startDate": "2020-08",
@@ -40,7 +38,6 @@
       },
       {
         "institution": "SENA",
-        "url": "",
         "area": "Producción Multimedia",
         "studyType": "Técnico",
         "startDate": "2018-02",
@@ -54,31 +51,26 @@
       {
         "name": "Diplomado en desarrollo de aplicaciones móviles",
         "date": "2022-12",
-        "url": "",
         "issuer": "Ministerio de las TIC"
       },
       {
         "name": "Diplomado en programación básica en lenguaje Java",
         "date": "2022-09",
-        "url": "",
         "issuer": "Ministerio de las TIC"
       },
       {
         "name": "Diplomado en fundamentos de programación en lenguaje Python",
         "date": "2022-07",
-        "url": "",
         "issuer": "Ministerio de las TIC"
       },
       {
         "name": "Scrum fundamentals certified",
         "date": "2022-05",
-        "url": "",
         "issuer": "VMEdu Inc."
       },
       {
         "name": "Basic english 1: elementary",
         "date": "2021-04",
-        "url": "",
         "issuer": "King's College London"
       }
     ],
@@ -157,8 +149,6 @@
           "Inteligencia Artificial",
           "Visión por Computadora"
         ],
-        "startDate": "",
-        "endDate": "",
         "url": "https://github.com/DavidValenciaX/tomatoSwinTransformerApp",
         "roles": [
           "Desarrollador Full-Stack"
@@ -181,8 +171,6 @@
           "Machine Learning",
           "Desarrollo Móvil"
         ],
-        "startDate": "",
-        "endDate": "",
         "url": "https://github.com/DavidValenciaX/BananaRipenessApp",
         "roles": [
           "Desarrollador Android"
@@ -207,8 +195,6 @@
           "SweetAlert2",
           "Font Awesome"
         ],
-        "startDate": "",
-        "endDate": "",
         "url": "https://github.com/DavidValenciaX/printNelsy",
         "roles": [
           "Desarrollador Frontend"
@@ -231,8 +217,6 @@
           "React",
           "Full-Stack Development"
         ],
-        "startDate": "",
-        "endDate": "",
         "url": "https://github.com/DavidValenciaX/horarios_app",
         "roles": [
           "Desarrollador Full-Stack"
