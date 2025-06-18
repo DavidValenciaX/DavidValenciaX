@@ -1,0 +1,122 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "basics": {
+      "name": "Oscar David Valencia Alvarez",
+      "label": "Ingeniero de software",
+      "image": "",
+      "email": "davidvalencia0526@gmail.com",
+      "phone": "+57 317 374 3023",
+      "url": "",
+      "summary": "Ingeniero de software egresado de la Universidad Surcolombiana, apasionado por crear soluciones tecnológicas eficientes, escalables y de alto impacto, con un especial interés en el campo de la Inteligencia Artificial. Me destaco por mi pensamiento analítico, adaptabilidad y compromiso con la alta calidad. Poseo una experiencia académica sólida en arquitectura y desarrollo full-stack, abarcando todo el ciclo de vida del software, incluyendo la toma de requerimientos, el diseño y modelado de arquitectura y bases de datos, la creación de MVPs, el desarrollo, implementación y despliegue de aplicaciones web y móviles. Siempre aplicando principios de metodologías ágiles en entornos de trabajo colaborativo, con control de versiones y herramientas de gestión de proyectos. Mi objetivo es integrarme en un equipo innovador donde pueda aportar valor real y contribuir a la resolución de problemas complejos.",
+      "location": {
+        "city": "Neiva",
+        "countryCode": "CO",
+        "region": "Huila"
+      },
+      "profiles": [
+        {
+          "network": "Github",
+          "username": "DavidValencia",
+          "url": "https://github.com/DavidValencia"
+        },
+        {
+          "network": "LinkedIn",
+          "username": "oscar-david-valencia-alvarez-3b26321a3",
+          "url": "https://www.linkedin.com/in/oscar-david-valencia-alvarez-3b26321a3"
+        }
+      ]
+    },
+    "work": [],
+    "volunteer": [],
+    "education": [
+      {
+        "institution": "Universidad Surcolombiana",
+        "url": "",
+        "area": "Ingeniería de software",
+        "studyType": "Grado en Ingeniería",
+        "startDate": "2020-08",
+        "endDate": "2025-06",
+        "score": "",
+        "courses": []
+      },
+      {
+        "institution": "SENA",
+        "url": "",
+        "area": "Producción Multimedia",
+        "studyType": "Técnico",
+        "startDate": "2018-02",
+        "endDate": "2020-01",
+        "score": "",
+        "courses": []
+      }
+    ],
+    "awards": [],
+    "certificates": [
+      {
+        "name": "Diplomado en desarrollo de aplicaciones móviles",
+        "date": "2022-12",
+        "url": "",
+        "issuer": "Ministerio de las TIC"
+      },
+      {
+        "name": "Diplomado en programación básica en lenguaje Java",
+        "date": "2022-09",
+        "url": "",
+        "issuer": "Ministerio de las TIC"
+      },
+      {
+        "name": "Diplomado en fundamentos de programación en lenguaje Python",
+        "date": "2022-07",
+        "url": "",
+        "issuer": "Ministerio de las TIC"
+      },
+      {
+        "name": "Scrum fundamentals certified",
+        "date": "2022-05",
+        "url": "",
+        "issuer": "VMEdu Inc."
+      },
+      {
+        "name": "Basic english 1: elementary",
+        "date": "2021-04",
+        "url": "",
+        "issuer": "King's College London"
+      }
+    ],
+    "publications": [],
+    "skills": [
+      {
+        "name": "Desarrollo de Software y Tecnologías",
+        "level": "",
+        "keywords": [
+          "React",
+          "PHP",
+          "AWS",
+          "Docker",
+          "Github",
+          "GIT",
+          "Figma",
+          "Scrum",
+          "C++",
+          "Java",
+          "Python",
+          "JavaScript",
+          "CSS",
+          "HTML"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Español",
+        "fluency": "Nativo"
+      },
+      {
+        "language": "Inglés",
+        "fluency": "Básico (Elementary)"
+      }
+    ],
+    "interests": [],
+    "references": [],
+    "projects": []
+  }
