@@ -134,46 +134,23 @@
     "references": [],
     "projects": [
       {
-        "name": "tomatoSwinTransformerApp: Clasificación de Enfermedades de Plantas con IA",
-        "description": "Una aplicación web que utiliza un modelo Swin Transformer para clasificar enfermedades de plantas de tomate a partir de imágenes. Este proyecto demuestra mis habilidades en visión por computadora, aprendizaje profundo y despliegue de modelos.",
+        "name": "horarios_app: Gestor de Horarios Basado en Web",
+        "description": "Una aplicación web full-stack para crear y gestionar horarios. Demuestra mis habilidades en la construcción de interfaces de usuario interactivas y lógica de backend para un caso de uso práctico.",
         "highlights": [
-          "Implementación de modelo Swin Transformer",
-          "Clasificación de enfermedades en plantas",
-          "Despliegue de modelos de IA"
+          "Desarrollo full-stack completo",
+          "Interfaz de usuario interactiva",
+          "Gestión de horarios automatizada"
         ],
         "keywords": [
-          "Python",
-          "TensorFlow/PyTorch",
-          "HTML/CSS",
           "JavaScript",
-          "Inteligencia Artificial",
-          "Visión por Computadora"
+          "Node.js",
+          "Express",
+          "React",
+          "Full-Stack Development"
         ],
-        "url": "https://github.com/DavidValenciaX/tomatoSwinTransformerApp",
+        "url": "https://horarios-application.netlify.app/",
         "roles": [
           "Desarrollador Full-Stack"
-        ],
-        "entity": "Proyecto Personal",
-        "type": "application"
-      },
-      {
-        "name": "BananaRipenessApp: Detección Móvil de Madurez",
-        "description": "Una aplicación móvil (Android) que utiliza aprendizaje automático para determinar el estado de madurez de los plátanos a partir de una foto. Destaca mis habilidades en desarrollo móvil y aplicación práctica de IA.",
-        "highlights": [
-          "Desarrollo de aplicación Android nativa",
-          "Implementación de TensorFlow Lite",
-          "Detección de madurez mediante IA"
-        ],
-        "keywords": [
-          "Kotlin",
-          "TensorFlow Lite",
-          "Android",
-          "Machine Learning",
-          "Desarrollo Móvil"
-        ],
-        "url": "https://github.com/DavidValenciaX/BananaRipenessApp",
-        "roles": [
-          "Desarrollador Android"
         ],
         "entity": "Proyecto Personal",
         "type": "application"
@@ -200,28 +177,6 @@
           "Desarrollador Frontend"
         ],
         "entity": "Proyecto Personal/Familiar",
-        "type": "application"
-      },
-      {
-        "name": "horarios_app: Gestor de Horarios Basado en Web",
-        "description": "Una aplicación web full-stack para crear y gestionar horarios. Demuestra mis habilidades en la construcción de interfaces de usuario interactivas y lógica de backend para un caso de uso práctico.",
-        "highlights": [
-          "Desarrollo full-stack completo",
-          "Interfaz de usuario interactiva",
-          "Gestión de horarios automatizada"
-        ],
-        "keywords": [
-          "JavaScript",
-          "Node.js",
-          "Express",
-          "React",
-          "Full-Stack Development"
-        ],
-        "url": "https://horarios-application.netlify.app/",
-        "roles": [
-          "Desarrollador Full-Stack"
-        ],
-        "entity": "Proyecto Personal",
         "type": "application"
       }
     ]

@@ -32,18 +32,6 @@ Here are some of the technologies I've been working with:
 
 ## 🚀 Projects
 
-### tomatoSwinTransformerApp: AI-Powered Plant Disease Classification
-
-- **Description:** A web application leveraging a Swin Transformer model to classify tomato plant diseases from images. This project showcases my skills in computer vision, deep learning, and model deployment.
-- **Tech Stack:** Python, TensorFlow/PyTorch, HTML/CSS, JavaScript.
-- **[GitHub Repository](https://github.com/DavidValenciaX/tomatoSwinTransformerApp)**
-
-### BananaRipenessApp: Mobile Ripeness Detection
-
-- **Description:** A mobile application (Android) that uses machine learning to determine the ripeness stage of bananas from a photo. It highlights my abilities in mobile development and practical AI application.
-- **Tech Stack:** Kotlin, TensorFlow Lite.
-- **[GitHub Repository](https://github.com/DavidValenciaX/BananaRipenessApp)**
-
 ### printNelsy: Image Printing Assistant
 
 - **Description:** A web application for manipulating, organizing, and printing images using Fabric.js. Created with love for my mother Maria Nelsy and our family business "Papelería Nelsy". Features include multiple image upload, drag & drop support, image manipulation (resize, rotate, crop, effects), layout creation (collages, grids), and optimized printing with different paper sizes and orientations.
