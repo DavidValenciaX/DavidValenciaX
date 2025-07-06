@@ -1,0 +1,24 @@
+{
+  "name": "jsonresume-theme-minimal-clean",
+  "version": "1.0.0",
+  "description": "Tema minimalista y limpio para JSON Resume",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "jsonresume",
+    "theme",
+    "minimal",
+    "clean",
+    "cv",
+    "resume"
+  ],
+  "author": "Oscar David Valencia Alvarez",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidValenciaX/jsonresume-theme-minimal-clean.git"
+  }
+} 
