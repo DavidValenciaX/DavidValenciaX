@@ -69,10 +69,16 @@ const CSS_STYLES = `
     }
     
     .header {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: ${SPACING.XL};
       border-bottom: 2px solid ${COLORS.BORDER};
       padding-bottom: ${SPACING.LARGE};
       margin-bottom: ${SPACING.XL};
+    }
+    
+    .header-content {
+      flex-grow: 1;
     }
     
     .profile-image {
@@ -86,10 +92,6 @@ const CSS_STYLES = `
       object-fit: cover;
       object-position: center;
       border: 3px solid ${COLORS.BORDER};
-      margin-bottom: ${SPACING.MEDIUM};
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.3s ease;
       background-color: #f8f9fa;
@@ -118,10 +120,10 @@ const CSS_STYLES = `
     
     .contact-info {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       gap: ${SPACING.LARGE};
       flex-wrap: wrap;
-      margin-bottom: ${SPACING.MEDIUM};
+      margin-top: ${SPACING.MEDIUM};
     }
     
     .contact-item {
@@ -309,6 +311,11 @@ const CSS_STYLES = `
         padding: ${SPACING.MEDIUM};
       }
       
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
       .profile-image {
         width: 100px;
         height: 100px;
@@ -316,6 +323,7 @@ const CSS_STYLES = `
         min-height: 100px;
         max-width: 100px;
         max-height: 100px;
+        margin-bottom: ${SPACING.MEDIUM};
       }
       
       .name {
@@ -325,6 +333,7 @@ const CSS_STYLES = `
       .contact-info {
         flex-direction: column;
         gap: ${SPACING.SMALL};
+        align-items: center;
       }
       
       .skills-grid {
@@ -359,6 +368,13 @@ const CSS_STYLES = `
         margin-bottom: 0.8rem;
         border-bottom-width: 1px;
         page-break-inside: avoid;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .header-content {
+        flex-grow: 1;
       }
 
       .profile-image, .profile-image:hover {
@@ -371,7 +387,6 @@ const CSS_STYLES = `
         box-shadow: none !important;
         border: 2px solid #e1e8ed !important;
         transform: none !important;
-        margin-bottom: 0.3rem;
       }
 
       .name {
@@ -386,9 +401,11 @@ const CSS_STYLES = `
       }
 
       .contact-info {
-        gap: 0.8rem;
-        margin-bottom: 0.3rem;
+        gap: 0.5rem;
+        margin-bottom: 0;
         font-size: 7pt;
+        justify-content: flex-start;
+        margin-top: 0.3rem;
       }
 
       .contact-item {
@@ -639,11 +656,13 @@ const renderHeader = (basics) => {
   return `
     <header class="header">
       ${profileImage}
-      <h1 class="name">${name || ''}</h1>
-      <div class="label">${label || ''}</div>
-      <div class="contact-info">
-        ${contactItems.join('')}
-        ${profileLinks}
+      <div class="header-content">
+        <h1 class="name">${name || ''}</h1>
+        <div class="label">${label || ''}</div>
+        <div class="contact-info">
+          ${contactItems.join('')}
+          ${profileLinks}
+        </div>
       </div>
     </header>
   `;
