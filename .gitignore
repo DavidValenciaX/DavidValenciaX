@@ -20,6 +20,7 @@ jspm_packages/
 test-output.html
 output.html
 *.html
+*.pdf
 
 # OS generated files
 .DS_Store

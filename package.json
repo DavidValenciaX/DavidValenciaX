@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "html-output": "node html-output.js"
+    "html-output": "node html-output.js",
+    "pdf-output": "node pdf-output.js"
   },
   "keywords": [
     "jsonresume",
@@ -20,5 +21,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DavidValenciaX/jsonresume-theme-minimal-clean.git"
+  },
+  "dependencies": {
+    "puppeteer": "^24.11.2"
   }
-} 
+}

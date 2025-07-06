@@ -336,6 +336,58 @@ const CSS_STYLES = `
         gap: ${SPACING.SMALL};
       }
     }
+
+    @media print {
+      body {
+        max-width: 100%;
+        margin: 0;
+        padding: 1.5cm;
+        font-size: 10pt;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        background-color: ${COLORS.BACKGROUND};
+      }
+
+      .header, .item, .section-title {
+        border-color: #e1e8ed !important;
+      }
+
+      .profile-image, .profile-image:hover {
+        box-shadow: none !important;
+        border: 3px solid #e1e8ed !important;
+        transform: none !important;
+      }
+
+      .summary, .skill-category, .project-card {
+        background-color: #f8f9fa !important;
+        border-left-color: ${COLORS.ACCENT} !important;
+      }
+
+      .skill-tag {
+        background-color: ${COLORS.ACCENT} !important;
+        color: white !important;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      
+      .contact-item:hover, .project-link:hover {
+        text-decoration: none !important;
+      }
+
+      .project-link, .contact-item {
+        color: ${COLORS.LIGHT_TEXT} !important;
+      }
+
+      .contact-item svg {
+        color: ${COLORS.ACCENT} !important;
+      }
+      
+      .project-link {
+        color: ${COLORS.ACCENT} !important;
+      }
+    }
   </style>
 `;
 
