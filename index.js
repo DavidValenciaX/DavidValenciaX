@@ -341,31 +341,205 @@ const CSS_STYLES = `
       body {
         max-width: 100%;
         margin: 0;
-        padding: 1.5cm;
-        font-size: 10pt;
+        padding: 0.8cm;
+        font-size: 8pt;
+        line-height: 1.3;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
         background-color: ${COLORS.BACKGROUND};
+        page-break-inside: avoid;
+        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
       }
 
-      .header, .item, .section-title {
-        border-color: #e1e8ed !important;
+      .header {
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.8rem;
+        border-bottom-width: 1px;
+        page-break-inside: avoid;
       }
 
       .profile-image, .profile-image:hover {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        min-height: 60px;
+        max-width: 60px;
+        max-height: 60px;
         box-shadow: none !important;
-        border: 3px solid #e1e8ed !important;
+        border: 2px solid #e1e8ed !important;
         transform: none !important;
+        margin-bottom: 0.3rem;
       }
 
-      .summary, .skill-category, .project-card {
+      .name {
+        font-size: 1.4rem;
+        margin-bottom: 0.2rem;
+        font-weight: 600;
+      }
+
+      .label {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+      }
+
+      .contact-info {
+        gap: 0.8rem;
+        margin-bottom: 0.3rem;
+        font-size: 7pt;
+      }
+
+      .contact-item {
+        font-size: 7pt;
+        gap: 0.2rem;
+      }
+
+      .contact-item svg {
+        width: 12px;
+        height: 12px;
+      }
+
+      .summary {
+        margin: 0.5rem 0;
+        padding: 0.4rem;
+        font-size: 7pt;
+        line-height: 1.2;
         background-color: #f8f9fa !important;
-        border-left-color: ${COLORS.ACCENT} !important;
+        border-left: 2px solid ${COLORS.ACCENT} !important;
+        border-radius: 2px;
+        page-break-inside: avoid;
+      }
+
+      .section {
+        margin-bottom: 0.8rem;
+        page-break-inside: avoid;
+      }
+
+      .section-title {
+        font-size: 0.9rem;
+        padding-bottom: 0.2rem;
+        margin-bottom: 0.4rem;
+        font-weight: 700;
+        border-bottom: 1px solid #e1e8ed !important;
+      }
+
+      .item {
+        margin-bottom: 0.4rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid #f0f0f0;
+        page-break-inside: avoid;
+      }
+
+      .item-title {
+        font-size: 8pt;
+        font-weight: 600;
+        margin-bottom: 0.1rem;
+      }
+
+      .item-subtitle {
+        font-size: 7pt;
+        margin-bottom: 0.1rem;
+      }
+
+      .item-date {
+        font-size: 6pt;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4rem;
+        page-break-inside: avoid;
+      }
+
+      .skill-category {
+        background-color: #f8f9fa !important;
+        padding: 0.3rem;
+        border-radius: 3px;
+        border-left: 2px solid ${COLORS.ACCENT} !important;
+        page-break-inside: avoid;
+      }
+
+      .skill-category-name {
+        font-weight: 600;
+        margin-bottom: 0.2rem;
+        font-size: 7pt;
+      }
+
+      .skill-tags {
+        gap: 0.2rem;
       }
 
       .skill-tag {
         background-color: ${COLORS.ACCENT} !important;
         color: white !important;
+        padding: 0.1rem 0.3rem;
+        border-radius: 8px;
+        font-size: 6pt;
+      }
+
+      .projects-grid {
+        gap: 0.4rem;
+        page-break-inside: avoid;
+      }
+
+      .project-card {
+        background-color: #f8f9fa !important;
+        padding: 0.4rem;
+        border-radius: 4px;
+        border-left: 2px solid ${COLORS.ACCENT} !important;
+        page-break-inside: avoid;
+      }
+
+      .project-name {
+        font-size: 8pt;
+        font-weight: 600;
+        margin-bottom: 0.2rem;
+      }
+
+      .project-description {
+        margin-bottom: 0.2rem;
+        font-size: 7pt;
+        line-height: 1.2;
+      }
+
+      .project-highlights {
+        margin: 0.2rem 0;
+        font-size: 6pt;
+      }
+
+      .project-highlights li {
+        padding-left: 0.5rem;
+        margin-bottom: 0.1rem;
+      }
+
+      .project-link {
+        font-size: 6pt;
+        color: ${COLORS.ACCENT} !important;
+      }
+
+      .languages {
+        gap: 0.8rem;
+        page-break-inside: avoid;
+      }
+
+      .language {
+        text-align: center;
+      }
+
+      .language-name {
+        font-weight: 600;
+        font-size: 7pt;
+      }
+
+      .language-fluency {
+        font-size: 6pt;
+      }
+
+      .header, .item, .section-title {
+        border-color: #e1e8ed !important;
       }
 
       a {
@@ -376,7 +550,7 @@ const CSS_STYLES = `
         text-decoration: none !important;
       }
 
-      .project-link, .contact-item {
+      .contact-item {
         color: ${COLORS.LIGHT_TEXT} !important;
       }
 
@@ -386,6 +560,19 @@ const CSS_STYLES = `
       
       .project-link {
         color: ${COLORS.ACCENT} !important;
+      }
+
+      /* Ajustes para que el contenido se adapte al A4 sin escalado forzado */
+      html, body {
+        height: auto;
+        overflow: visible;
+      }
+
+      body {
+        transform: none;
+        transform-origin: initial;
+        width: 100%;
+        height: auto;
       }
     }
   </style>

@@ -1,5 +1,5 @@
 import { render } from './index.js';
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import puppeteer from 'puppeteer';
 import path from 'path';
 
@@ -23,6 +23,13 @@ const generatePdf = async () => {
     });
     const page = await browser.newPage();
 
+    // Configurar viewport para optimizar el renderizado
+    await page.setViewport({
+      width: 794,  // Ancho A4 en píxeles (210mm a 96 DPI)
+      height: 1123, // Alto A4 en píxeles (297mm a 96 DPI)
+      deviceScaleFactor: 1
+    });
+
     console.log('📄 Estableciendo contenido HTML...');
     await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
 
@@ -34,12 +41,15 @@ const generatePdf = async () => {
       path: pdfOutputPath,
       format: 'A4',
       printBackground: true,
+      preferCSSPageSize: true,
+      displayHeaderFooter: false,
       margin: {
         top: '0px',
         right: '0px',
         bottom: '0px',
         left: '0px'
-      }
+      },
+      scale: 0.9 // Escala ajustada para reflejar tamaño real en A4
     });
 
     console.log('✅ ¡PDF generado exitosamente!');
