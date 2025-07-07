@@ -680,9 +680,7 @@ const renderSummary = (summary) => {
   if (!summary) return '';
   
   return `
-    <div class="summary">
-      ${formatTextWithLineBreaks(summary)}
-    </div>
+    <div class="summary">${formatTextWithLineBreaks(summary)}</div>
   `;
 };
 
