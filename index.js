@@ -156,6 +156,8 @@ const CSS_STYLES = `
       background-color: #f8f9fa;
       border-left: 4px solid ${COLORS.ACCENT};
       border-radius: 4px;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
     }
     
     .section {
@@ -255,6 +257,8 @@ const CSS_STYLES = `
     .project-description {
       margin-bottom: ${SPACING.SMALL};
       text-align: justify;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
     }
     
     .project-highlights {
@@ -427,6 +431,8 @@ const CSS_STYLES = `
         border-left: 2px solid ${COLORS.ACCENT} !important;
         border-radius: 2px;
         page-break-inside: avoid;
+        white-space: pre-wrap !important;
+        overflow-wrap: break-word !important;
       }
 
       .section {
@@ -520,6 +526,8 @@ const CSS_STYLES = `
         margin-bottom: 0.2rem;
         font-size: 7pt;
         line-height: 1.2;
+        white-space: pre-wrap !important;
+        overflow-wrap: break-word !important;
       }
 
       .project-highlights {
