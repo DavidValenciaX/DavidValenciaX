@@ -49,7 +49,7 @@ const generatePdf = async () => {
         bottom: '0px',
         left: '0px'
       },
-      scale: 0.9 // Escala ajustada para reflejar tamaño real en A4
+      scale: 0.85 // Escala ajustada para reflejar tamaño real en A4
     });
 
     console.log('✅ ¡PDF generado exitosamente!');

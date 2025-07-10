@@ -39,7 +39,7 @@
       {
         "institution": "SENA",
         "area": "Producción Multimedia",
-        "studyType": "Técnico",
+        "studyType": "Tecnólogo",
         "startDate": "2018-02",
         "endDate": "2020-01",
         "score": "",
@@ -74,7 +74,15 @@
         "issuer": "King's College London"
       }
     ],
-    "publications": [],
+    "publications": [
+      {
+        "name": "Development of a Model for Detection and Classification of Diseases in Tomato Plants Using Swin Transformer Architecture",
+        "publisher": "Research Square",
+        "releaseDate": "2023-11-22",
+        "url": "https://dx.doi.org/10.21203/rs.3.rs-3618075/v1",
+        "summary": "This research focuses on developing a model for the detection and classification of diseases in tomato plants using the Swin Transformer architecture. The model aims to surpass the accuracy limitations of current Convolutional Neural Networks (CNN) methods. The study involves constructing a balanced dataset for various tomato plant diseases, evaluating the model's predictions, and comparing its accuracy with CNN-based models."
+      }
+    ],
     "skills": [
       {
         "name": "Frontend",

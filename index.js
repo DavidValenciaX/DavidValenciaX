@@ -722,6 +722,32 @@ const renderCertificates = (certificates) => {
   `;
 };
 
+const renderPublications = (publications) => {
+  if (!publications || publications.length === 0) return '';
+
+  const publicationItems = publications.map(pub => {
+    const publisherAndDate = [pub.publisher, pub.releaseDate ? formatDate(pub.releaseDate) : null]
+      .filter(Boolean)
+      .join(' &bull; ');
+
+    return `
+    <div class="item">
+      <div class="item-title">${pub.name || ''}</div>
+      <div class="item-subtitle">${publisherAndDate}</div>
+      ${pub.summary ? `<div class="project-description">${formatTextWithLineBreaks(pub.summary)}</div>` : ''}
+      ${pub.url ? `<a href="${pub.url}" class="project-link" target="_blank" rel="noopener noreferrer">Ver Publicación</a>` : ''}
+    </div>
+    `
+  }).join('');
+
+  return `
+    <section class="section">
+      <h2 class="section-title">Publicaciones</h2>
+      ${publicationItems}
+    </section>
+  `;
+};
+
 const renderSkills = (skills) => {
   if (!skills || skills.length === 0) return '';
   
@@ -802,7 +828,8 @@ const render = (resume) => {
     certificates,
     skills,
     projects,
-    languages
+    languages,
+    publications
   } = resume;
   
   return `
@@ -819,6 +846,7 @@ const render = (resume) => {
       ${renderSummary(basics?.summary)}
       ${renderEducation(education)}
       ${renderProjects(projects)}
+      ${renderPublications(publications)}
       ${renderSkills(skills)}
       ${renderCertificates(certificates)}
       ${renderLanguages(languages)}
