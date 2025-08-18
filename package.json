@@ -5,9 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node html-output.js",
+    "start": "node index.js",
     "pdf": "node pdf-output.js",
-    "pdf:mobile": "node pdf-output-mobile.js"
+    "pdf:mobile": "node pdf-output-mobile.js",
+    "pdf:professional": "node pdf-output-professional.js",
+    "html": "node html-output.js"
   },
   "keywords": [
     "jsonresume",
