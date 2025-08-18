@@ -24,7 +24,24 @@
         }
       ]
     },
-    "work": [],
+    "work": [
+      {
+        "name": "Distri Marcas SJG",
+        "position": "Desarrollador Web Freelance",
+        "location": "Neiva, Colombia",
+        "startDate": "2025-07",
+        "endDate": "2025-08",
+        "description": "Desarrollo e implementación de un sitio web de comercio electrónico para una empresa mayorista, integrando WordPress y WooCommerce. Personalización de funcionalidades, configuración de hosting y optimización de rendimiento.",
+        "highlights": [
+          "Configuración e integración de WooCommerce con personalización mediante hooks y snippets PHP",
+          "Implementación de catálogo mayorista con reglas de precios y categorías avanzadas",
+          "Optimización de rendimiento (caché, imágenes, minificación) logrando tiempos de carga <3s",
+          "Integración de pasarela de pagos y correos transaccionales automáticos",
+          "Hardening de seguridad (roles mínimos, backups programados, SSL, protección contra ataques comunes)"
+        ],
+        "url": "https://distrimarcassjg.com/"
+      }
+    ],
     "volunteer": [],
     "education": [
       {
@@ -126,6 +143,11 @@
           "Figma",
           "Scrum"
         ]
+      },
+      {
+        "name": "E-commerce & CMS",
+        "level": "",
+        "keywords": ["WordPress", "WooCommerce", "Theme Customization", "Performance Optimization"]
       }
     ],
     "languages": [
