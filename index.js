@@ -587,7 +587,7 @@ const CSS_STYLES = `
         color: ${COLORS.ACCENT} !important;
       }
 
-      /* Ajustes para que el contenido se adapte al A4 sin escalado forzado */
+      /* Ajustes para que el contenido se adapte al tamaño de página sin escalado forzado */
       html, body {
         height: auto;
         overflow: visible;

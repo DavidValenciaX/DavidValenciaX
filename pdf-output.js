@@ -25,8 +25,8 @@ const generatePdf = async () => {
 
     // Configurar viewport para optimizar el renderizado
     await page.setViewport({
-      width: 794,  // Ancho A4 en píxeles (210mm a 96 DPI)
-      height: 1123, // Alto A4 en píxeles (297mm a 96 DPI)
+      width: 816,  // Ancho Letter en píxeles (8.5in a 96 DPI)
+      height: 1056, // Alto Letter en píxeles (11in a 96 DPI)
       deviceScaleFactor: 1
     });
 
@@ -39,7 +39,7 @@ const generatePdf = async () => {
     console.log('📄 Generando PDF...');
     await page.pdf({
       path: pdfOutputPath,
-      format: 'A4',
+      format: 'Letter',
       printBackground: true,
       preferCSSPageSize: true,
       displayHeaderFooter: false,
@@ -49,7 +49,7 @@ const generatePdf = async () => {
         bottom: '0px',
         left: '0px'
       },
-      scale: 0.85 // Escala ajustada para reflejar tamaño real en A4
+      scale: 1 // Escala ajustada para reflejar tamaño real en Letter
     });
 
     console.log('✅ ¡PDF generado exitosamente!');
