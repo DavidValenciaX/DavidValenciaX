@@ -164,33 +164,6 @@
     "references": [],
     "projects": [
       {
-        "name": "Distri Marcas SJG: E-commerce Mayorista",
-        "description": "Desarrollé e implementé un sitio web de comercio electrónico para una empresa mayorista, integrando WordPress y WooCommerce. El proyecto incluyó personalización de funcionalidades de carrito, gestión de usuarios y optimización de rendimiento para soportar ventas al por mayor. Me encargué de la configuración de hosting, seguridad (SSL, roles de usuario), pasarela de pagos y experiencia de usuario responsive.",
-        "highlights": [
-          "Configuración e integración de WooCommerce con personalización mediante hooks y snippets PHP",
-          "Implementación de catálogo mayorista con reglas de precios y categorías avanzadas",
-          "Optimización de rendimiento (caché, imágenes, minificación) logrando tiempos de carga <3s",
-          "Integración de pasarela de pagos y correos transaccionales automáticos",
-          "Hardening de seguridad (roles mínimos, backups programados, SSL, protección contra ataques comunes)"
-        ],
-        "keywords": [
-          "WordPress",
-          "WooCommerce",
-          "PHP",
-          "MySQL",
-          "Performance Optimization",
-          "Responsive Design",
-          "Security",
-          "E-commerce"
-        ],
-        "url": "https://distrimarcassjg.com/",
-        "roles": [
-          "Desarrollador Web Freelance"
-        ],
-        "entity": "Distri Marcas SJG",
-        "type": "e-commerce"
-      },
-      {
         "name": "horarios_app: Gestor de Horarios Basado en Web",
         "description": "Aplicación web full-stack para crear y gestionar horarios. Demuestra habilidades en UI/UX, backend y despliegue.",
         "highlights": [
