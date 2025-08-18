@@ -608,7 +608,7 @@ const formatDate = (dateString) => {
   if (!dateString) return 'Presente';
   
   const date = new Date(dateString);
-  const options = { year: 'numeric', month: 'long' };
+  const options = { year: 'numeric', month: 'long', timeZone: 'UTC' };
   return date.toLocaleDateString('es-ES', options);
 };
 
@@ -681,6 +681,32 @@ const renderSummary = (summary) => {
   
   return `
     <div class="summary">${formatTextWithLineBreaks(summary)}</div>
+  `;
+};
+
+const renderWork = (work) => {
+  if (!work || work.length === 0) return '';
+
+  const workItems = work.map(job => `
+    <div class="item">
+      <div class="item-title">${job.position || ''}</div>
+      <div class="item-subtitle">${job.name || ''} &bull; ${job.location || ''}</div>
+      <div class="item-date">${formatDateRange(job.startDate, job.endDate)}</div>
+      ${job.description ? `<div class="project-description">${formatTextWithLineBreaks(job.description)}</div>` : ''}
+      ${job.highlights && job.highlights.length > 0 ? `
+        <ul class="project-highlights">
+          ${job.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
+        </ul>
+      ` : ''}
+      ${job.url ? `<a href="${job.url}" class="project-link" target="_blank" rel="noopener noreferrer">Ver sitio web</a>` : ''}
+    </div>
+  `).join('');
+
+  return `
+    <section class="section">
+      <h2 class="section-title">Experiencia Laboral</h2>
+      ${workItems}
+    </section>
   `;
 };
 
@@ -824,6 +850,7 @@ const render = (resume) => {
   
   const {
     basics,
+    work,
     education,
     certificates,
     skills,
@@ -844,6 +871,7 @@ const render = (resume) => {
     <body>
       ${renderHeader(basics)}
       ${renderSummary(basics?.summary)}
+      ${renderWork(work)}
       ${renderEducation(education)}
       ${renderProjects(projects)}
       ${renderPublications(publications)}
