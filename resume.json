@@ -170,23 +170,15 @@
       },
       {
         "name": "horarios_app: Gestor de Horarios Basado en Web",
-        "description": "Una aplicación web full-stack para crear y gestionar horarios. Demuestra mis habilidades en la construcción de interfaces de usuario interactivas y lógica de backend para un caso de uso práctico.",
+        "description": "Aplicación web full-stack para crear y gestionar horarios. Demuestra habilidades en UI/UX, backend y despliegue.",
         "highlights": [
-          "Desarrollo full-stack completo",
-          "Interfaz de usuario interactiva",
-          "Gestión de horarios automatizada"
+          "Desarrollo full-stack con Vanilla JavaScript, Node.js y Express",
+          "Interfaz interactiva y responsive para la gestión de horarios",
+          "Gestión automatizada de conflictos y asignaciones"
         ],
-        "keywords": [
-          "JavaScript",
-          "Node.js",
-          "Express",
-          "React",
-          "Full-Stack Development"
-        ],
+        "keywords": ["JavaScript", "Node.js", "Express", "Vanilla JS", "Full-Stack Development"],
         "url": "https://horarios-application.netlify.app/",
-        "roles": [
-          "Desarrollador Full-Stack"
-        ],
+        "roles": ["Desarrollador Full-Stack"],
         "entity": "Proyecto Personal",
         "type": "application"
       },
