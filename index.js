@@ -355,8 +355,8 @@ const CSS_STYLES = `
         max-width: 100%;
         margin: 0;
         padding: 0;
-        font-size: 8pt;
-        line-height: 1.3;
+        font-size: 11pt;
+        line-height: 1.4;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
         background-color: ${COLORS.BACKGROUND};
@@ -390,26 +390,26 @@ const CSS_STYLES = `
       }
 
       .name {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         margin-bottom: 0.2rem;
         font-weight: 600;
       }
 
       .label {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         margin-bottom: 0.3rem;
       }
 
       .contact-info {
         gap: 0.5rem;
         margin-bottom: 0;
-        font-size: 7pt;
+        font-size: 10pt;
         justify-content: flex-start;
         margin-top: 0.3rem;
       }
 
       .contact-item {
-        font-size: 7pt;
+        font-size: 10pt;
         gap: 0.2rem;
       }
 
@@ -421,8 +421,8 @@ const CSS_STYLES = `
       .summary {
         margin: 0.5rem 0;
         padding: 0.4rem;
-        font-size: 7pt;
-        line-height: 1.2;
+        font-size: 10pt;
+        line-height: 1.3;
         background-color: #f8f9fa !important;
         border-left: 2px solid ${COLORS.ACCENT} !important;
         border-radius: 2px;
@@ -437,7 +437,7 @@ const CSS_STYLES = `
       }
 
       .section-title {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         padding-bottom: 0.2rem;
         margin-bottom: 0.4rem;
         font-weight: 700;
@@ -452,18 +452,18 @@ const CSS_STYLES = `
       }
 
       .item-title {
-        font-size: 8pt;
+        font-size: 11pt;
         font-weight: 600;
         margin-bottom: 0.1rem;
       }
 
       .item-subtitle {
-        font-size: 7pt;
+        font-size: 10pt;
         margin-bottom: 0.1rem;
       }
 
       .item-date {
-        font-size: 6pt;
+        font-size: 9pt;
       }
 
       .skills-grid {
@@ -484,7 +484,7 @@ const CSS_STYLES = `
       .skill-category-name {
         font-weight: 600;
         margin-bottom: 0.2rem;
-        font-size: 7pt;
+        font-size: 10pt;
       }
 
       .skill-tags {
@@ -496,7 +496,7 @@ const CSS_STYLES = `
         color: white !important;
         padding: 0.1rem 0.3rem;
         border-radius: 8px;
-        font-size: 6pt;
+        font-size: 8pt;
       }
 
       .projects-grid {
@@ -513,22 +513,22 @@ const CSS_STYLES = `
       }
 
       .project-name {
-        font-size: 8pt;
+        font-size: 11pt;
         font-weight: 600;
         margin-bottom: 0.2rem;
       }
 
       .project-description {
         margin-bottom: 0.2rem;
-        font-size: 7pt;
-        line-height: 1.2;
+        font-size: 10pt;
+        line-height: 1.3;
         white-space: pre-wrap !important;
         overflow-wrap: break-word !important;
       }
 
       .project-highlights {
         margin: 0.2rem 0;
-        font-size: 6pt;
+        font-size: 9pt;
       }
 
       .project-highlights li {
@@ -537,7 +537,7 @@ const CSS_STYLES = `
       }
 
       .project-link {
-        font-size: 6pt;
+        font-size: 9pt;
         color: ${COLORS.ACCENT} !important;
       }
 
@@ -552,11 +552,11 @@ const CSS_STYLES = `
 
       .language-name {
         font-weight: 600;
-        font-size: 7pt;
+        font-size: 10pt;
       }
 
       .language-fluency {
-        font-size: 6pt;
+        font-size: 9pt;
       }
 
       .header, .item, .section-title {
