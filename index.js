@@ -354,17 +354,13 @@ const CSS_STYLES = `
       body {
         max-width: 100%;
         margin: 0;
-        padding: 0.8cm;
+        padding: 0;
         font-size: 8pt;
         line-height: 1.3;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
         background-color: ${COLORS.BACKGROUND};
         page-break-inside: avoid;
-        overflow: hidden;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
       }
 
       .header {

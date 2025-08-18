@@ -44,10 +44,10 @@ const generatePdf = async () => {
       preferCSSPageSize: true,
       displayHeaderFooter: false,
       margin: {
-        top: '0px',
-        right: '0px',
-        bottom: '0px',
-        left: '0px'
+        top: '0.8cm',
+        right: '0.8cm',
+        bottom: '0.8cm',
+        left: '0.8cm'
       },
       scale: 1 // Escala ajustada para reflejar tamaño real en Letter
     });
