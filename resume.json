@@ -184,25 +184,16 @@
       },
       {
         "name": "printNelsy: Asistente de Impresión de Imágenes",
-        "description": "Una aplicación web para manipular, organizar e imprimir imágenes usando Fabric.js. Creada con amor para mi madre María Nelsy y nuestro negocio familiar 'Papelería Nelsy'. Incluye funciones de carga múltiple de imágenes, soporte de arrastrar y soltar, manipulación de imágenes (redimensionar, rotar, recortar, efectos), creación de diseños (collages, cuadrículas) e impresión optimizada con diferentes tamaños y orientaciones de papel.",
+        "description": "Aplicación web para manipular, organizar e imprimir imágenes usando Fabric.js. Desarrollada para el negocio familiar 'Papelería Nelsy'. Incluye funciones de carga múltiple de imágenes, soporte de arrastrar y soltar, manipulación de imágenes (redimensionar, rotar, recortar, efectos), creación de diseños (collages, cuadrículas) e impresión optimizada con diferentes tamaños y orientaciones de papel.",
         "highlights": [
           "Manipulación avanzada de imágenes con Fabric.js",
           "Interfaz intuitiva de arrastrar y soltar",
-          "Optimización para impresión",
-          "Creación de collages y cuadrículas"
+          "Optimización para impresión (collages, cuadrículas, diferentes tamaños de papel)",
+          "Usada en negocio familiar para imprimir decenas de imágenes semanales"
         ],
-        "keywords": [
-          "HTML5",
-          "CSS3",
-          "JavaScript ES6+",
-          "Fabric.js",
-          "SweetAlert2",
-          "Font Awesome"
-        ],
+        "keywords": ["HTML5", "CSS3", "JavaScript ES6+", "Fabric.js", "SweetAlert2", "Font Awesome"],
         "url": "https://print-nelsy.vercel.app/",
-        "roles": [
-          "Desarrollador Frontend"
-        ],
+        "roles": ["Desarrollador Frontend"],
         "entity": "Proyecto Personal/Familiar",
         "type": "application"
       }
