@@ -1,0 +1,25 @@
+/* Declaraciones de fuentes LatinModern */
+@font-face {
+  font-family: 'LatinModern';
+  src: url('./latin-modern-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LatinModern';
+  src: url('./lmroman10-bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fallback para navegadores que no soporten WOFF2 */
+@font-face {
+  font-family: 'LatinModern';
+  src: url('./lmroman10-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

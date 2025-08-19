@@ -15,8 +15,37 @@ const SPACING = {
 };
 
 // Estilos CSS inline para ATS
-const CSS_STYLES = `
+const getCssStyles = (fonts) => `
   <style>
+    /* Declaraciones de fuentes LatinModern */
+    ${fonts.regularWoff2 ? `
+    @font-face {
+      font-family: 'LatinModern';
+      src: url(data:font/woff2;base64,${fonts.regularWoff2}) format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }` : ''}
+
+    ${fonts.boldOtf ? `
+    @font-face {
+      font-family: 'LatinModern';
+      src: url(data:font/otf;base64,${fonts.boldOtf}) format('opentype');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }` : ''}
+
+    /* Fallback para navegadores que no soporten WOFF2 */
+    ${fonts.regularOtf ? `
+    @font-face {
+      font-family: 'LatinModern';
+      src: url(data:font/otf;base64,${fonts.regularOtf}) format('opentype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }` : ''}
+    
     * {
       margin: 0;
       padding: 0;
@@ -194,7 +223,7 @@ const renderLanguages = (languages) => {
 };
 
 // Función principal de renderizado profesional
-const render = (resume) => {
+const render = (resume, fonts = {}) => {
     if (!resume) throw new Error('Resume data is required');
     const { basics, work, education, certificates, skills, projects, languages, publications } = resume;
     return `
@@ -203,7 +232,7 @@ const render = (resume) => {
         <head>
             <meta charset="UTF-8">
             <title>${basics?.name || 'CV'} - ${basics?.label || ''}</title>
-            ${CSS_STYLES}
+            ${getCssStyles(fonts)}
         </head>
         <body>
             ${renderHeader(basics)}

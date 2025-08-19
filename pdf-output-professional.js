@@ -5,6 +5,15 @@ import path from 'path';
 
 const RESUME_FILE_PATH = './resume.json';
 
+const readFontAsBase64 = (filePath) => {
+  try {
+    return readFileSync(filePath, 'base64');
+  } catch (error) {
+    console.warn(`⚠️  Advertencia: No se pudo encontrar el archivo de fuente en ${filePath}. La fuente no será incrustada.`);
+    return null;
+  }
+};
+
 const generatePdf = async () => {
   try {
     console.log('📖 Leyendo resume.json para CV profesional...');
@@ -14,7 +23,15 @@ const generatePdf = async () => {
     const pdfOutputPath = path.resolve(process.cwd(), pdfFileName);
 
     console.log('🎨 Renderizando tema profesional...');
-    const htmlContent = render(resumeData);
+    
+    // Leer fuentes y codificarlas en Base64
+    const fonts = {
+      regularWoff2: readFontAsBase64('./fonts/latin-modern-regular.woff2'),
+      regularOtf: readFontAsBase64('./fonts/lmroman10-regular.otf'),
+      boldOtf: readFontAsBase64('./fonts/lmroman10-bold.otf')
+    };
+
+    const htmlContent = render(resumeData, fonts);
 
     console.log('🚀 Iniciando Puppeteer para CV profesional...');
     const browser = await puppeteer.launch({
