@@ -5,7 +5,7 @@
       "image": "https://s.gravatar.com/avatar/1fe920b6e79b5881c1d20fbc0e021f67?s=256",
       "email": "davidvalencia0526@gmail.com",
       "phone": "+57 317 374 3023",
-      "summary": "Ingeniero de software egresado de la Universidad Surcolombiana, apasionado por crear soluciones tecnológicas eficientes, escalables y de alto impacto, con un especial interés en Inteligencia Artificial y desarrollo full-stack.\n\nPoseo una experiencia académica sólida en arquitectura de software y desarrollo full-stack, abarcando todo el ciclo de vida del software, incluyendo la toma de requerimientos, el diseño y modelado de arquitectura y bases de datos, la creación de MVPs, el desarrollo, implementación y despliegue de aplicaciones web y móviles. Siempre aplicando principios de metodologías ágiles en entornos de trabajo colaborativo, con control de versiones y herramientas de gestión de proyectos.\n\nMe destaco por mi pensamiento analítico, adaptabilidad y compromiso con la alta calidad. Mi objetivo es integrarme en un equipo innovador donde pueda aportar valor real y contribuir a la resolución de problemas complejos.",
+      "summary": "Ingeniero de software junior con sólida formación full-stack y experiencia real construyendo un e-commerce. Competente en JavaScript (Node.js), Vanilla JS y principios de arquitectura de software; capaz de diseñar y desplegar MVPs usando metodologías ágiles y control de versiones. Destaco por mi pensamiento analítico, enfoque en la calidad del código y las buenas prácticas. Busco incorporarme como desarrollador web full-stack, a un equipo donde aportar soluciones escalables e innovadoras",
       "location": {
         "city": "Neiva",
         "countryCode": "CO",
@@ -35,7 +35,7 @@
         "highlights": [
           "Configuración e integración de WooCommerce con personalización mediante hooks y snippets PHP",
           "Implementación de catálogo mayorista con reglas de precios y categorías avanzadas",
-          "Optimización de rendimiento (caché, imágenes, minificación) logrando tiempos de carga <3s",
+          "Optimización de rendimiento (caché, imágenes, minificación) logrando tiempos de carga menores a 3 segundos",
           "Integración de pasarela de pagos y correos transaccionales automáticos",
           "Hardening de seguridad (roles mínimos, backups programados, SSL, protección contra ataques comunes)"
         ],
@@ -118,9 +118,7 @@
           "Java",
           "Node.js",
           "Express",
-          "Python",
-          "Django",
-          "PHP"
+          "Python"
         ]
       },
       {
