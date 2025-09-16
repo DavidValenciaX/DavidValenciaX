@@ -63,7 +63,6 @@
         "courses": []
       }
     ],
-    "awards": [],
     "certificates": [
       {
         "name": "Diplomado en fundamentos de programación en lenguaje Python",
@@ -114,9 +113,9 @@
         "name": "Backend",
         "level": "",
         "keywords": [
-          "Java",
           "Node.js",
-          "Express"
+          "Express",
+          "Swagger"
         ]
       },
       {
@@ -134,9 +133,6 @@
         "keywords": [
           "Git",
           "GitHub",
-          "Docker",
-          "AWS",
-          "Figma",
           "Scrum"
         ]
       },
@@ -156,8 +152,6 @@
         "fluency": "Intermedio"
       }
     ],
-    "interests": [],
-    "references": [],
     "projects": [
       {
         "name": "horarios_app: Gestor de Horarios Basado en Web",

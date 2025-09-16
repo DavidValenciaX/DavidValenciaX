@@ -8,7 +8,6 @@
     "start": "node index.js",
     "pdf": "node pdf-output.js",
     "pdf:mobile": "node pdf-output-mobile.js",
-    "pdf:professional": "node pdf-output-professional.js",
     "html": "node html-output.js"
   },
   "keywords": [
@@ -26,6 +25,9 @@
     "url": "git+https://github.com/DavidValenciaX/jsonresume-theme-minimal-clean.git"
   },
   "dependencies": {
+    "jsonresume-theme-elegant": "^1.16.1",
+    "jsonresume-theme-even": "^0.26.0",
+    "jsonresume-theme-professional": "^1.1.0",
     "puppeteer": "^24.11.2"
   }
 }

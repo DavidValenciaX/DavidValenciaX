@@ -1,0 +1,776 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Oscar David Valencia Alvarez - Ingeniero de software</title>
+      
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: #333333;
+      background-color: #ffffff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      border-bottom: 2px solid #e1e8ed;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .header-content {
+      flex-grow: 1;
+    }
+    
+    .profile-image {
+      width: 120px;
+      height: 120px;
+      min-width: 120px;
+      min-height: 120px;
+      max-width: 120px;
+      max-height: 120px;
+      border-radius: 25%;
+      object-fit: cover;
+      object-position: center;
+      border: 3px solid #e1e8ed;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.3s ease;
+      background-color: #f8f9fa;
+      image-rendering: auto;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: pixelated;
+    }
+    
+    .profile-image:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .name {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
+    
+    .label {
+      font-size: 1.2rem;
+      color: #34495e;
+      margin-bottom: 1rem;
+    }
+    
+    .contact-info {
+      display: flex;
+      justify-content: flex-start;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    
+    .contact-item {
+      color: #666666;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: color 0.2s ease;
+    }
+    
+    .contact-item svg {
+      color: #3498db;
+      transition: color 0.2s ease;
+    }
+    
+    .contact-item:hover {
+      color: #3498db;
+    }
+    
+    .contact-item:hover svg {
+      color: #2c3e50;
+    }
+    
+    .summary {
+      text-align: justify;
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background-color: #f8f9fa;
+      border-left: 4px solid #3498db;
+      border-radius: 4px;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+    }
+    
+    .section {
+      margin-bottom: 2rem;
+    }
+    
+    .section-title {
+      font-size: 1.4rem;
+      color: #2c3e50;
+      border-bottom: 1px solid #e1e8ed;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    .item {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .item:last-child {
+      border-bottom: none;
+    }
+    
+    .item-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #34495e;
+      margin-bottom: 0.5rem;
+    }
+    
+    .item-subtitle {
+      color: #666666;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .item-date {
+      font-size: 0.85rem;
+      color: #666666;
+      font-style: italic;
+    }
+    
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    
+    .skill-category {
+      background-color: #f8f9fa;
+      padding: 1rem;
+      border-radius: 6px;
+      border-left: 3px solid #3498db;
+    }
+    
+    .skill-category-name {
+      font-weight: 600;
+      color: #34495e;
+      margin-bottom: 0.5rem;
+    }
+    
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .skill-tag {
+      background-color: #3498db;
+      color: white;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.8rem;
+    }
+    
+    .projects-grid {
+      display: grid;
+      gap: 1rem;
+    }
+    
+    .project-card {
+      background-color: #f8f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 4px solid #3498db;
+    }
+    
+    .project-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+    
+    .project-description {
+      margin-bottom: 0.5rem;
+      text-align: justify;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+    }
+    
+    .project-highlights {
+      list-style: none;
+      margin: 0.5rem 0;
+    }
+    
+    .project-highlights li {
+      position: relative;
+      padding-left: 1rem;
+      margin-bottom: 0.3rem;
+    }
+    
+    .project-highlights li:before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: #3498db;
+      font-weight: bold;
+    }
+    
+    .project-link {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .project-link:hover {
+      text-decoration: underline;
+    }
+    
+    .languages {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    
+    .language {
+      text-align: center;
+    }
+    
+    .language-name {
+      font-weight: 600;
+      color: #34495e;
+    }
+    
+    .language-fluency {
+      font-size: 0.9rem;
+      color: #666666;
+    }
+    
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .profile-image {
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        min-height: 100px;
+        max-width: 100px;
+        max-height: 100px;
+        margin-bottom: 1rem;
+      }
+      
+      .name {
+        font-size: 2rem;
+      }
+      
+      .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+      }
+      
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .languages {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+
+    @media print {
+      body {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 11pt;
+        line-height: 1.4;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        background-color: #ffffff;
+        page-break-inside: avoid;
+      }
+
+      .header {
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.8rem;
+        border-bottom-width: 1px;
+        page-break-inside: avoid;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .header-content {
+        flex-grow: 1;
+      }
+
+      .profile-image, .profile-image:hover {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        min-height: 60px;
+        max-width: 60px;
+        max-height: 60px;
+        box-shadow: none !important;
+        border: 2px solid #e1e8ed !important;
+        transform: none !important;
+      }
+
+      .name {
+        font-size: 1.8rem;
+        margin-bottom: 0.2rem;
+        font-weight: 600;
+      }
+
+      .label {
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+      }
+
+      .contact-info {
+        gap: 0.5rem;
+        margin-bottom: 0;
+        font-size: 10pt;
+        justify-content: flex-start;
+        margin-top: 0.3rem;
+      }
+
+      .contact-item {
+        font-size: 10pt;
+        gap: 0.2rem;
+      }
+
+      .contact-item svg {
+        width: 12px;
+        height: 12px;
+      }
+
+      .summary {
+        margin: 0.5rem 0;
+        padding: 0.4rem;
+        font-size: 10pt;
+        line-height: 1.3;
+        background-color: #f8f9fa !important;
+        border-left: 2px solid #3498db !important;
+        border-radius: 2px;
+        page-break-inside: avoid;
+        white-space: pre-wrap !important;
+        overflow-wrap: break-word !important;
+      }
+
+      .section {
+        margin-bottom: 0.8rem;
+        page-break-inside: avoid;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+        padding-bottom: 0.2rem;
+        margin-bottom: 0.4rem;
+        font-weight: 700;
+        border-bottom: 1px solid #e1e8ed !important;
+      }
+
+      .item {
+        margin-bottom: 0.4rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid #f0f0f0;
+        page-break-inside: avoid;
+      }
+
+      .item-title {
+        font-size: 11pt;
+        font-weight: 600;
+        margin-bottom: 0.1rem;
+      }
+
+      .item-subtitle {
+        font-size: 10pt;
+        margin-bottom: 0.1rem;
+      }
+
+      .item-date {
+        font-size: 9pt;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4rem;
+        page-break-inside: avoid;
+      }
+
+      .skill-category {
+        background-color: #f8f9fa !important;
+        padding: 0.3rem;
+        border-radius: 3px;
+        border-left: 2px solid #3498db !important;
+        page-break-inside: avoid;
+      }
+
+      .skill-category-name {
+        font-weight: 600;
+        margin-bottom: 0.2rem;
+        font-size: 10pt;
+      }
+
+      .skill-tags {
+        gap: 0.2rem;
+      }
+
+      .skill-tag {
+        background-color: #3498db !important;
+        color: white !important;
+        padding: 0.1rem 0.3rem;
+        border-radius: 8px;
+        font-size: 8pt;
+      }
+
+      .projects-grid {
+        gap: 0.4rem;
+        page-break-inside: avoid;
+      }
+
+      .project-card {
+        background-color: #f8f9fa !important;
+        padding: 0.4rem;
+        border-radius: 4px;
+        border-left: 2px solid #3498db !important;
+        page-break-inside: avoid;
+      }
+
+      .project-name {
+        font-size: 11pt;
+        font-weight: 600;
+        margin-bottom: 0.2rem;
+      }
+
+      .project-description {
+        margin-bottom: 0.2rem;
+        font-size: 10pt;
+        line-height: 1.3;
+        white-space: pre-wrap !important;
+        overflow-wrap: break-word !important;
+      }
+
+      .project-highlights {
+        margin: 0.2rem 0;
+        font-size: 9pt;
+      }
+
+      .project-highlights li {
+        padding-left: 0.5rem;
+        margin-bottom: 0.1rem;
+      }
+
+      .project-link {
+        font-size: 9pt;
+        color: #3498db !important;
+      }
+
+      .languages {
+        gap: 0.8rem;
+        page-break-inside: avoid;
+      }
+
+      .language {
+        text-align: center;
+      }
+
+      .language-name {
+        font-weight: 600;
+        font-size: 10pt;
+      }
+
+      .language-fluency {
+        font-size: 9pt;
+      }
+
+      .header, .item, .section-title {
+        border-color: #e1e8ed !important;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      
+      .contact-item:hover, .project-link:hover {
+        text-decoration: none !important;
+      }
+
+      .contact-item {
+        color: #666666 !important;
+      }
+
+      .contact-item svg {
+        color: #3498db !important;
+      }
+      
+      .project-link {
+        color: #3498db !important;
+      }
+
+      /* Ajustes para que el contenido se adapte al tamaño de página sin escalado forzado */
+      html, body {
+        height: auto;
+        overflow: visible;
+      }
+
+      body {
+        transform: none;
+        transform-origin: initial;
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+
+    </head>
+    <body>
+      
+    <header class="header">
+      
+    <img 
+      src="https://s.gravatar.com/avatar/1fe920b6e79b5881c1d20fbc0e021f67?s=256" 
+      alt="Foto de perfil de Oscar David Valencia Alvarez"
+      class="profile-image"
+      loading="lazy"
+      decoding="async"
+      width="120"
+      height="120"
+      onload="this.style.opacity=1"
+      onerror="this.style.display='none'"
+      style="opacity:0;transition:opacity 0.3s ease"
+    />
+  
+      <div class="header-content">
+        <h1 class="name">Oscar David Valencia Alvarez</h1>
+        <div class="label">Ingeniero de software</div>
+        <div class="contact-info">
+          <a href="mailto:davidvalencia0526@gmail.com" class="contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>davidvalencia0526@gmail.com</a><span class="contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.19 12.85C3.49997 10.2412 2.44818 7.27099 2.12 4.18C2.09501 3.90347 2.12788 3.62476 2.21649 3.36162C2.3051 3.09849 2.44754 2.85669 2.63460 2.65162C2.82167 2.44655 3.04881 2.28271 3.30277 2.17052C3.55674 2.05833 3.83044 2.00026 4.11 2H7.11C7.59531 1.99522 8.06709 2.16708 8.43684 2.48353C8.80659 2.79999 9.04201 3.23945 9.11 3.72C9.23662 4.68007 9.47144 5.62273 9.81 6.53C9.94455 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.36 8.64L8.09 9.91C9.51356 12.4135 11.5865 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.1981 21.5265 15.5759C21.8437 15.9536 22.0122 16.4313 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>+57 317 374 3023</span><span class="contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>Neiva, Huila, CO</span>
+          <a href="https://github.com/DavidValenciaX" class="contact-item" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="currentColor"/>
+  </svg>Github</a><a href="https://www.linkedin.com/in/oscar-david-valencia-alvarez-3b26321a3" class="contact-item" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 382 382" xmlns="http://www.w3.org/2000/svg"><path d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z" fill="currentColor"/></svg>LinkedIn</a>
+        </div>
+      </div>
+    </header>
+  
+      
+    <div class="summary">Ingeniero de software junior con sólida formación full-stack y experiencia real construyendo un e-commerce. Competente en JavaScript (Node.js), Vanilla JS y principios de arquitectura de software; capaz de diseñar y desplegar MVPs usando metodologías ágiles y control de versiones. Destaco por mi pensamiento analítico, enfoque en la calidad del código y las buenas prácticas. Busco incorporarme como desarrollador web full-stack, a un equipo donde aportar soluciones escalables e innovadoras</div>
+  
+      
+    <section class="section">
+      <h2 class="section-title">Experiencia Laboral</h2>
+      
+    <div class="item">
+      <div class="item-title">Desarrollador Web Freelance</div>
+      <div class="item-subtitle">Distri Marcas SJG &bull; Neiva, Colombia</div>
+      <div class="item-date">julio de 2025 - agosto de 2025</div>
+      <div class="project-description">Desarrollo e implementación de un sitio web de comercio electrónico para una empresa mayorista, integrando WordPress y WooCommerce. Personalización de funcionalidades, configuración de hosting y optimización de rendimiento.</div>
+      
+        <ul class="project-highlights">
+          <li>Configuración e integración de WooCommerce con personalización mediante hooks y snippets PHP</li><li>Implementación de catálogo mayorista con reglas de precios y categorías avanzadas</li><li>Optimización de rendimiento (caché, imágenes, minificación) logrando tiempos de carga menores a 3 segundos</li><li>Integración de pasarela de pagos y correos transaccionales automáticos</li><li>Hardening de seguridad (roles mínimos, backups programados, SSL, protección contra ataques comunes)</li>
+        </ul>
+      
+      <a href="https://distrimarcassjg.com/" class="project-link" target="_blank" rel="noopener noreferrer">Ver sitio web</a>
+    </div>
+  
+    </section>
+  
+      
+    <section class="section">
+      <h2 class="section-title">Educación</h2>
+      
+    <div class="item">
+      <div class="item-title">Universidad Surcolombiana</div>
+      <div class="item-subtitle">Grado en Ingeniería en Ingeniería de software</div>
+      <div class="item-date">agosto de 2020 - junio de 2025</div>
+    </div>
+  
+    <div class="item">
+      <div class="item-title">SENA</div>
+      <div class="item-subtitle">Tecnólogo en Producción Multimedia</div>
+      <div class="item-date">febrero de 2018 - enero de 2020</div>
+    </div>
+  
+    </section>
+  
+      
+    <section class="section">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="projects-grid">
+        
+    <div class="project-card">
+      <div class="project-name">horarios_app: Gestor de Horarios Basado en Web</div>
+      <div class="project-description">Aplicación web full-stack para crear y gestionar horarios. Demuestra habilidades en UI/UX, backend y despliegue.</div>
+      
+        <ul class="project-highlights">
+          <li>Desarrollo full-stack con Vanilla JavaScript, Node.js y Express</li><li>Interfaz interactiva y responsive para la gestión de horarios</li><li>Gestión automatizada de conflictos y asignaciones</li>
+        </ul>
+      
+      <a href="https://horarios-application.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+    </div>
+  
+    <div class="project-card">
+      <div class="project-name">printNelsy: Asistente de Impresión de Imágenes</div>
+      <div class="project-description">Aplicación web para manipular, organizar e imprimir imágenes usando Fabric.js. Desarrollada para el negocio familiar 'Papelería Nelsy'. Incluye funciones de carga múltiple de imágenes, soporte de arrastrar y soltar, manipulación de imágenes (redimensionar, rotar, recortar, efectos), creación de diseños (collages, cuadrículas) e impresión optimizada con diferentes tamaños y orientaciones de papel.</div>
+      
+        <ul class="project-highlights">
+          <li>Manipulación avanzada de imágenes con Fabric.js</li><li>Interfaz intuitiva de arrastrar y soltar</li><li>Optimización para impresión (collages, cuadrículas, diferentes tamaños de papel)</li><li>Usada en negocio familiar para imprimir decenas de imágenes semanales</li>
+        </ul>
+      
+      <a href="https://print-nelsy.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+    </div>
+  
+      </div>
+    </section>
+  
+      
+    <section class="section">
+      <h2 class="section-title">Publicaciones</h2>
+      
+    <div class="item">
+      <div class="item-title">Development of a Model for Detection and Classification of Diseases in Tomato Plants Using Swin Transformer Architecture</div>
+      <div class="item-subtitle">Research Square &bull; noviembre de 2023</div>
+      <div class="project-description">This research focuses on developing a model for the detection and classification of diseases in tomato plants using the Swin Transformer architecture. The model aims to surpass the accuracy limitations of current Convolutional Neural Networks (CNN) methods. The study involves constructing a balanced dataset for various tomato plant diseases, evaluating the model's predictions, and comparing its accuracy with CNN-based models.</div>
+      <a href="https://dx.doi.org/10.21203/rs.3.rs-3618075/v1" class="project-link" target="_blank" rel="noopener noreferrer">Ver Publicación</a>
+    </div>
+    
+    </section>
+  
+      
+    <section class="section">
+      <h2 class="section-title">Habilidades Técnicas</h2>
+      <div class="skills-grid">
+        
+    <div class="skill-category">
+      <div class="skill-category-name">Frontend</div>
+      <div class="skill-tags">
+        <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span><span class="skill-tag">JavaScript</span>
+      </div>
+    </div>
+  
+    <div class="skill-category">
+      <div class="skill-category-name">Backend</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Node.js</span><span class="skill-tag">Express</span><span class="skill-tag">Swagger</span>
+      </div>
+    </div>
+  
+    <div class="skill-category">
+      <div class="skill-category-name">Bases de Datos</div>
+      <div class="skill-tags">
+        <span class="skill-tag">PostgreSQL</span><span class="skill-tag">MongoDB</span><span class="skill-tag">MySQL</span>
+      </div>
+    </div>
+  
+    <div class="skill-category">
+      <div class="skill-category-name">Herramientas, Plataformas y Metodologías</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">Scrum</span>
+      </div>
+    </div>
+  
+    <div class="skill-category">
+      <div class="skill-category-name">E-commerce & CMS</div>
+      <div class="skill-tags">
+        <span class="skill-tag">WordPress</span><span class="skill-tag">WooCommerce</span><span class="skill-tag">Theme Customization</span><span class="skill-tag">Performance Optimization</span>
+      </div>
+    </div>
+  
+      </div>
+    </section>
+  
+      
+    <section class="section">
+      <h2 class="section-title">Certificaciones</h2>
+      
+    <div class="item">
+      <div class="item-title">Diplomado en fundamentos de programación en lenguaje Python</div>
+      <div class="item-subtitle">Ministerio de las TIC</div>
+      <div class="item-date">julio de 2022</div>
+    </div>
+  
+    <div class="item">
+      <div class="item-title">Diplomado en programación básica en lenguaje Java</div>
+      <div class="item-subtitle">Ministerio de las TIC</div>
+      <div class="item-date">septiembre de 2022</div>
+    </div>
+  
+    <div class="item">
+      <div class="item-title">Diplomado en desarrollo de aplicaciones móviles</div>
+      <div class="item-subtitle">Ministerio de las TIC</div>
+      <div class="item-date">diciembre de 2022</div>
+    </div>
+  
+    <div class="item">
+      <div class="item-title">Scrum fundamentals certified</div>
+      <div class="item-subtitle">VMEdu Inc.</div>
+      <div class="item-date">mayo de 2022</div>
+    </div>
+  
+    <div class="item">
+      <div class="item-title">Basic english 1: elementary</div>
+      <div class="item-subtitle">King's College London</div>
+      <div class="item-date">abril de 2021</div>
+    </div>
+  
+    </section>
+  
+      
+    <section class="section">
+      <h2 class="section-title">Idiomas</h2>
+      <div class="languages">
+        
+    <div class="language">
+      <div class="language-name">Español</div>
+      <div class="language-fluency">Nativo</div>
+    </div>
+  
+    <div class="language">
+      <div class="language-name">Inglés</div>
+      <div class="language-fluency">Intermedio</div>
+    </div>
+  
+      </div>
+    </section>
+  
+    </body>
+    </html>
+  

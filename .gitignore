@@ -16,12 +16,6 @@ jspm_packages/
 # Optional eslint cache
 .eslintcache
 
-# Output files
-test-output.html
-output.html
-*.html
-*.pdf
-
 # OS generated files
 .DS_Store
 .DS_Store?

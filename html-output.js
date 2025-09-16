@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync } from 'fs';
 
 // Constantes para archivos
 const RESUME_FILE_PATH = './resume.json';
-const OUTPUT_FILE_PATH = './output.html';
+const OUTPUT_FILE_PATH = './resume.html';
 
 try {
   // Leer el archivo resume.json
