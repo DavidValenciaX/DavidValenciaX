@@ -5,7 +5,7 @@
       "image": "https://s.gravatar.com/avatar/1fe920b6e79b5881c1d20fbc0e021f67?s=256",
       "email": "davidvalencia0526@gmail.com",
       "phone": "+57 317 374 3023",
-      "summary": "Ingeniero de software junior con sólida formación full-stack y experiencia real construyendo un e-commerce. Competente en JavaScript (Node.js), Vanilla JS y principios de arquitectura de software; capaz de diseñar y desplegar MVPs usando metodologías ágiles y control de versiones. Destaco por mi pensamiento analítico, enfoque en la calidad del código y las buenas prácticas. Busco incorporarme como desarrollador web full-stack, a un equipo donde aportar soluciones escalables e innovadoras",
+      "summary": "Ingeniero de software junior con sólida formación full-stack y experiencia real construyendo un e-commerce. Competente en JavaScript (ES6+), Node.js, Vanilla JS y principios de arquitectura de software; capaz de diseñar y desplegar MVPs usando metodologías ágiles y control de versiones. Destaco por mi pensamiento analítico, enfoque en la calidad del código y las buenas prácticas. Busco incorporarme como desarrollador web full-stack, a un equipo donde aportar soluciones escalables e innovadoras",
       "location": {
         "city": "Neiva",
         "countryCode": "CO",
@@ -13,7 +13,7 @@
       },
       "profiles": [
         {
-          "network": "Github",
+          "network": "GitHub",
           "username": "DavidValenciaX",
           "url": "https://github.com/DavidValenciaX"
         },
@@ -35,7 +35,7 @@
         "highlights": [
           "Configuración e integración de WooCommerce con personalización mediante hooks y snippets PHP",
           "Implementación de catálogo mayorista con reglas de precios y categorías avanzadas",
-          "Optimización de rendimiento (caché, imágenes, minificación) logrando tiempos de carga menores a 3 segundos",
+          "Optimización de rendimiento (caché, imágenes, minificación) logrando tiempos de carga menores a tres segundos",
           "Integración de pasarela de pagos y correos transaccionales automáticos",
           "Hardening de seguridad (roles mínimos, backups programados, SSL, protección contra ataques comunes)"
         ],
