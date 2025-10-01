@@ -361,6 +361,10 @@ const CSS_STYLES = `
         print-color-adjust: exact;
         background-color: ${COLORS.BACKGROUND};
         page-break-inside: avoid;
+        transform: none;
+        transform-origin: initial;
+        width: 100%;
+        height: auto;
       }
 
       .header {
@@ -411,11 +415,13 @@ const CSS_STYLES = `
       .contact-item {
         font-size: 10pt;
         gap: 0.2rem;
+        color: ${COLORS.LIGHT_TEXT} !important;
       }
 
       .contact-item svg {
         width: 12px;
         height: 12px;
+        color: ${COLORS.ACCENT} !important;
       }
 
       .summary {
@@ -571,29 +577,10 @@ const CSS_STYLES = `
         text-decoration: none !important;
       }
 
-      .contact-item {
-        color: ${COLORS.LIGHT_TEXT} !important;
-      }
-
-      .contact-item svg {
-        color: ${COLORS.ACCENT} !important;
-      }
-      
-      .project-link {
-        color: ${COLORS.ACCENT} !important;
-      }
-
       /* Ajustes para que el contenido se adapte al tamaño de página sin escalado forzado */
-      html, body {
+      html {
         height: auto;
         overflow: visible;
-      }
-
-      body {
-        transform: none;
-        transform-origin: initial;
-        width: 100%;
-        height: auto;
       }
     }
   </style>
