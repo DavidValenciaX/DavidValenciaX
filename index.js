@@ -638,9 +638,6 @@ const renderHeader = (basics) => {
       decoding="async"
       width="120"
       height="120"
-      onload="this.style.opacity=1"
-      onerror="this.style.display='none'"
-      style="opacity:0;transition:opacity 0.3s ease"
     />
   ` : '';
   
