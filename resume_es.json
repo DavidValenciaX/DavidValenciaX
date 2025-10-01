@@ -106,12 +106,27 @@
     {
       "name": "Backend",
       "level": "",
-      "keywords": ["Node.js", "Express", "Swagger"]
+      "keywords": ["Node.js", "Express"]
+    },
+    {
+      "name": "Documentación",
+      "level": "",
+      "keywords": ["Swagger"]
     },
     {
       "name": "Bases de Datos",
       "level": "",
       "keywords": ["PostgreSQL", "MongoDB"]
+    },
+    {
+      "name": "Testing",
+      "level": "",
+      "keywords": ["Jest"]
+    },
+    {
+      "name": "CI/CD",
+      "level": "",
+      "keywords": ["GitHub Actions"]
     },
     {
       "name": "Herramientas, Plataformas y Metodologías",
