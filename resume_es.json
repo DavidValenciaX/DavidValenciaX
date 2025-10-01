@@ -1,185 +1,182 @@
 {
-    "basics": {
-      "name": "Oscar David Valencia Alvarez",
-      "label": "Ingeniero de software",
-      "image": "https://s.gravatar.com/avatar/1fe920b6e79b5881c1d20fbc0e021f67?s=256",
-      "email": "davidvalencia0526@gmail.com",
-      "phone": "+57 317 374 3023",
-      "summary": "Ingeniero de software full-stack con experiencia demostrable. Dominio de JavaScript (ES6+), Node.js, Express.js, MongoDB, arquitectura de software, testing automatizado y CI/CD. Capaz de diseñar y desplegar productos escalables usando metodologías ágiles y control de versiones. Busco incorporarme como desarrollador a un equipo donde aportar soluciones innovadoras.",
-      "location": {
-        "city": "Neiva",
-        "countryCode": "CO",
-        "region": "Huila"
-      },
-      "profiles": [
-        {
-          "network": "GitHub",
-          "username": "DavidValenciaX",
-          "url": "https://github.com/DavidValenciaX"
-        },
-        {
-          "network": "LinkedIn",
-          "username": "oscar-david-valencia-alvarez-3b26321a3",
-          "url": "https://www.linkedin.com/in/oscar-david-valencia-alvarez-3b26321a3"
-        }
-      ]
+  "basics": {
+    "name": "Oscar David Valencia Alvarez",
+    "label": "Ingeniero de software",
+    "image": "https://s.gravatar.com/avatar/1fe920b6e79b5881c1d20fbc0e021f67?s=256",
+    "email": "davidvalencia0526@gmail.com",
+    "phone": "+57 317 374 3023",
+    "summary": "Ingeniero de software full-stack con experiencia demostrable. Dominio de JavaScript (ES6+), Node.js, Express.js, MongoDB, arquitectura de software, testing automatizado y CI/CD. Capaz de diseñar y desplegar productos escalables usando metodologías ágiles y control de versiones. Busco incorporarme como desarrollador a un equipo donde aportar soluciones innovadoras.",
+    "location": {
+      "city": "Neiva",
+      "countryCode": "CO",
+      "region": "Huila"
     },
-    "work": [
+    "profiles": [
       {
-        "name": "Distri Marcas SJG",
-        "position": "Desarrollador Web Freelance",
-        "location": "Neiva, Colombia",
-        "startDate": "2025-07",
-        "endDate": "2025-08",
-        "description": "Desarrollo e implementación de un sitio web de comercio electrónico para una empresa mayorista, integrando WordPress y WooCommerce. Personalización de funcionalidades, configuración de hosting y optimización de rendimiento.",
-        "highlights": [
-          "Configuración e integración de WooCommerce con personalización mediante hooks y snippets PHP",
-          "Implementación de catálogo mayorista con reglas de precios y categorías avanzadas",
-          "Optimización de rendimiento (caché, imágenes, minificación) logrando tiempos de carga menores a tres segundos",
-          "Integración de pasarela de pagos y correos transaccionales automáticos",
-          "Hardening de seguridad (roles mínimos, backups programados, SSL, protección contra ataques comunes)"
-        ],
-        "url": "https://distrimarcassjg.com/"
-      }
-    ],
-    "education": [
-      {
-        "institution": "Universidad Surcolombiana",
-        "area": "Ingeniería de software",
-        "studyType": "Grado en Ingeniería",
-        "startDate": "2020-08",
-        "endDate": "2025-06",
-        "score": "",
-        "courses": []
+        "network": "GitHub",
+        "username": "DavidValenciaX",
+        "url": "https://github.com/DavidValenciaX"
       },
       {
-        "institution": "SENA",
-        "area": "Producción Multimedia",
-        "studyType": "Tecnólogo",
-        "startDate": "2018-02",
-        "endDate": "2020-01",
-        "score": "",
-        "courses": []
-      }
-    ],
-    "certificates": [
-      {
-        "name": "Diplomado en fundamentos de programación en lenguaje Python",
-        "date": "2022-07",
-        "issuer": "Ministerio de las TIC"
-      },
-      {
-        "name": "Diplomado en programación básica en lenguaje Java",
-        "date": "2022-09",
-        "issuer": "Ministerio de las TIC"
-      },
-      {
-        "name": "Diplomado en desarrollo de aplicaciones móviles",
-        "date": "2022-12",
-        "issuer": "Ministerio de las TIC"
-      },
-      {
-        "name": "Scrum fundamentals certified",
-        "date": "2022-05",
-        "issuer": "VMEdu Inc."
-      },
-      {
-        "name": "Basic english 1: elementary",
-        "date": "2021-04",
-        "issuer": "King's College London"
-      }
-    ],
-    "publications": [
-      {
-        "name": "Development of a Model for Detection and Classification of Diseases in Tomato Plants Using Swin Transformer Architecture",
-        "publisher": "Research Square",
-        "releaseDate": "2023-11-22",
-        "url": "https://dx.doi.org/10.21203/rs.3.rs-3618075/v1",
-        "summary": "This research focuses on developing a model for the detection and classification of diseases in tomato plants using the Swin Transformer architecture. The model aims to surpass the accuracy limitations of current Convolutional Neural Networks (CNN) methods. The study involves constructing a balanced dataset for various tomato plant diseases, evaluating the model's predictions, and comparing its accuracy with CNN-based models."
-      }
-    ],
-    "skills": [
-      {
-        "name": "Frontend",
-        "level": "",
-        "keywords": [
-          "HTML5",
-          "CSS3",
-          "JavaScript"
-        ]
-      },
-      {
-        "name": "Backend",
-        "level": "",
-        "keywords": [
-          "Node.js",
-          "Express",
-          "Swagger"
-        ]
-      },
-      {
-        "name": "Bases de Datos",
-        "level": "",
-        "keywords": [
-          "PostgreSQL",
-          "MongoDB",
-          "MySQL"
-        ]
-      },
-      {
-        "name": "Herramientas, Plataformas y Metodologías",
-        "level": "",
-        "keywords": [
-          "Git",
-          "GitHub",
-          "Scrum"
-        ]
-      },
-      {
-        "name": "E-commerce & CMS",
-        "level": "",
-        "keywords": ["WordPress", "WooCommerce"]
-      }
-    ],
-    "languages": [
-      {
-        "language": "Español",
-        "fluency": "Nativo"
-      },
-      {
-        "language": "Inglés",
-        "fluency": "Intermedio"
-      }
-    ],
-    "projects": [
-      {
-        "name": "horarios_app: Gestor de Horarios Basado en Web",
-        "description": "Aplicación web full-stack para crear y gestionar horarios. Demuestra habilidades en UI/UX, backend y despliegue.",
-        "highlights": [
-          "Desarrollo full-stack con Vanilla JavaScript, Node.js y Express",
-          "Interfaz interactiva y responsive para la gestión de horarios",
-          "Gestión automatizada de conflictos y asignaciones"
-        ],
-        "keywords": ["JavaScript", "Node.js", "Express", "Vanilla JS", "Full-Stack Development"],
-        "url": "https://horarios-application.netlify.app/",
-        "roles": ["Desarrollador Full-Stack"],
-        "entity": "Proyecto Personal",
-        "type": "application"
-      },
-      {
-        "name": "printNelsy: Asistente de Impresión de Imágenes",
-        "description": "Aplicación web para manipular, organizar e imprimir imágenes usando Fabric.js. Desarrollada para el negocio familiar 'Papelería Nelsy'. Incluye funciones de carga múltiple de imágenes, soporte de arrastrar y soltar, manipulación de imágenes (redimensionar, rotar, recortar, efectos), creación de diseños (collages, cuadrículas) e impresión optimizada con diferentes tamaños y orientaciones de papel.",
-        "highlights": [
-          "Manipulación avanzada de imágenes con Fabric.js",
-          "Interfaz intuitiva de arrastrar y soltar",
-          "Optimización para impresión (collages, cuadrículas, diferentes tamaños de papel)",
-          "Usada en negocio familiar para imprimir decenas de imágenes semanales"
-        ],
-        "keywords": ["HTML5", "CSS3", "JavaScript ES6+", "Fabric.js", "SweetAlert2", "Font Awesome"],
-        "url": "https://print-nelsy.vercel.app/",
-        "roles": ["Desarrollador Frontend"],
-        "entity": "Proyecto Personal/Familiar",
-        "type": "application"
+        "network": "LinkedIn",
+        "username": "oscar-david-valencia-alvarez-3b26321a3",
+        "url": "https://www.linkedin.com/in/oscar-david-valencia-alvarez-3b26321a3"
       }
     ]
-  }
+  },
+  "work": [
+    {
+      "name": "Distri Marcas SJG",
+      "position": "Desarrollador Web Freelance",
+      "location": "Neiva, Colombia",
+      "startDate": "2025-07",
+      "endDate": "2025-08",
+      "description": "Desarrollo e implementación de un sitio web de comercio electrónico para una empresa mayorista, integrando WordPress y WooCommerce. Personalización de funcionalidades, configuración de hosting y optimización de rendimiento.",
+      "highlights": [
+        "Configuración e integración de WooCommerce con personalización mediante hooks y snippets PHP",
+        "Implementación de catálogo mayorista con reglas de precios y categorías avanzadas",
+        "Optimización de rendimiento (caché, imágenes, minificación) logrando tiempos de carga menores a tres segundos",
+        "Integración de pasarela de pagos y correos transaccionales automáticos",
+        "Hardening de seguridad (roles mínimos, backups programados, SSL, protección contra ataques comunes)"
+      ],
+      "url": "https://distrimarcassjg.com/"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Surcolombiana",
+      "area": "Ingeniería de software",
+      "studyType": "Grado en Ingeniería",
+      "startDate": "2020-08",
+      "endDate": "2025-06",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "SENA",
+      "area": "Producción Multimedia",
+      "studyType": "Tecnólogo",
+      "startDate": "2018-02",
+      "endDate": "2020-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Diplomado en fundamentos de programación en lenguaje Python",
+      "date": "2022-07",
+      "issuer": "Ministerio de las TIC"
+    },
+    {
+      "name": "Diplomado en programación básica en lenguaje Java",
+      "date": "2022-09",
+      "issuer": "Ministerio de las TIC"
+    },
+    {
+      "name": "Diplomado en desarrollo de aplicaciones móviles",
+      "date": "2022-12",
+      "issuer": "Ministerio de las TIC"
+    },
+    {
+      "name": "Scrum fundamentals certified",
+      "date": "2022-05",
+      "issuer": "VMEdu Inc."
+    },
+    {
+      "name": "Basic english 1: elementary",
+      "date": "2021-04",
+      "issuer": "King's College London"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Development of a Model for Detection and Classification of Diseases in Tomato Plants Using Swin Transformer Architecture",
+      "publisher": "Research Square",
+      "releaseDate": "2023-11-22",
+      "url": "https://dx.doi.org/10.21203/rs.3.rs-3618075/v1",
+      "summary": "This research focuses on developing a model for the detection and classification of diseases in tomato plants using the Swin Transformer architecture. The model aims to surpass the accuracy limitations of current Convolutional Neural Networks (CNN) methods. The study involves constructing a balanced dataset for various tomato plant diseases, evaluating the model's predictions, and comparing its accuracy with CNN-based models."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend",
+      "level": "",
+      "keywords": ["HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      "name": "Backend",
+      "level": "",
+      "keywords": ["Node.js", "Express", "Swagger"]
+    },
+    {
+      "name": "Bases de Datos",
+      "level": "",
+      "keywords": ["PostgreSQL", "MongoDB", "MySQL"]
+    },
+    {
+      "name": "Herramientas, Plataformas y Metodologías",
+      "level": "",
+      "keywords": ["Git", "GitHub", "Scrum"]
+    },
+    {
+      "name": "E-commerce & CMS",
+      "level": "",
+      "keywords": ["WordPress", "WooCommerce"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Intermedio"
+    }
+  ],
+  "projects": [
+    {
+      "name": "horarios_app: Gestor de Horarios Basado en Web",
+      "description": "Aplicación web full-stack para crear y gestionar horarios. Demuestra habilidades en UI/UX, backend y despliegue.",
+      "highlights": [
+        "Desarrollo full-stack con Vanilla JavaScript, Node.js y Express",
+        "Interfaz interactiva y responsive para la gestión de horarios",
+        "Gestión automatizada de conflictos y asignaciones"
+      ],
+      "keywords": [
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "Vanilla JS",
+        "Full-Stack Development"
+      ],
+      "url": "https://horarios-application.netlify.app/",
+      "roles": ["Desarrollador Full-Stack"],
+      "entity": "Proyecto Personal",
+      "type": "application"
+    },
+    {
+      "name": "printNelsy: Asistente de Impresión de Imágenes",
+      "description": "Aplicación web para manipular, organizar e imprimir imágenes usando Fabric.js. Desarrollada para el negocio familiar 'Papelería Nelsy'. Incluye funciones de carga múltiple de imágenes, soporte de arrastrar y soltar, manipulación de imágenes (redimensionar, rotar, recortar, efectos), creación de diseños (collages, cuadrículas) e impresión optimizada con diferentes tamaños y orientaciones de papel.",
+      "highlights": [
+        "Manipulación avanzada de imágenes con Fabric.js",
+        "Interfaz intuitiva de arrastrar y soltar",
+        "Optimización para impresión (collages, cuadrículas, diferentes tamaños de papel)",
+        "Usada en negocio familiar para imprimir decenas de imágenes semanales"
+      ],
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6+",
+        "Fabric.js",
+        "SweetAlert2",
+        "Font Awesome"
+      ],
+      "url": "https://print-nelsy.vercel.app/",
+      "roles": ["Desarrollador Frontend"],
+      "entity": "Proyecto Personal/Familiar",
+      "type": "application"
+    }
+  ]
+}
