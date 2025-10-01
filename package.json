@@ -25,9 +25,12 @@
     "url": "git+https://github.com/DavidValenciaX/jsonresume-theme-minimal-clean.git"
   },
   "dependencies": {
+    "@jsonresume/schema": "^1.2.1",
     "jsonresume-theme-elegant": "^1.16.1",
     "jsonresume-theme-even": "^0.26.0",
     "jsonresume-theme-professional": "^1.1.0",
-    "puppeteer": "^24.11.2"
+    "puppeteer": "^24.11.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   }
 }
