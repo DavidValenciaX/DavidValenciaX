@@ -177,6 +177,27 @@
       "roles": ["Desarrollador Frontend"],
       "entity": "Proyecto Personal/Familiar",
       "type": "application"
+    },
+    {
+      "name": "Distri Marcas SJG: E-commerce Mayorista",
+      "description": "Sitio web de comercio electrónico desarrollado para empresa mayorista usando WordPress y WooCommerce. Incluye catálogo personalizado, gestión de precios mayoristas y optimización de rendimiento.",
+      "highlights": [
+        "Desarrollo con WordPress y WooCommerce",
+        "Personalización mediante hooks y snippets PHP",
+        "Optimización de rendimiento y seguridad",
+        "Integración de pasarelas de pago"
+      ],
+      "keywords": [
+        "WordPress",
+        "WooCommerce",
+        "PHP",
+        "E-commerce",
+        "Performance Optimization"
+      ],
+      "url": "https://distrimarcassjg.com/",
+      "roles": ["Desarrollador Web Freelance"],
+      "entity": "Proyecto Comercial",
+      "type": "website"
     }
   ]
 }

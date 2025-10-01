@@ -1,0 +1,203 @@
+{
+  "basics": {
+    "name": "Oscar David Valencia Alvarez",
+    "label": "Software Engineer",
+    "image": "https://s.gravatar.com/avatar/1fe920b6e79b5881c1d20fbc0e021f67?s=256",
+    "email": "davidvalencia0526@gmail.com",
+    "phone": "+57 317 374 3023",
+    "summary": "Full-stack software engineer with proven experience. Proficient in JavaScript (ES6+), Node.js, Express.js, MongoDB, software architecture, automated testing, and CI/CD. Capable of designing and deploying scalable products using agile methodologies and version control. Seeking to join a development team where I can contribute innovative solutions.",
+    "location": {
+      "city": "Neiva",
+      "countryCode": "CO",
+      "region": "Huila"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "DavidValenciaX",
+        "url": "https://github.com/DavidValenciaX"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "oscar-david-valencia-alvarez-3b26321a3",
+        "url": "https://www.linkedin.com/in/oscar-david-valencia-alvarez-3b26321a3"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Distri Marcas SJG",
+      "position": "Freelance Web Developer",
+      "location": "Neiva, Colombia",
+      "startDate": "2025-07",
+      "endDate": "2025-08",
+      "description": "Development and implementation of an e-commerce website for a wholesale company, integrating WordPress and WooCommerce. Customization of functionalities, hosting configuration, and performance optimization.",
+      "highlights": [
+        "Configuration and integration of WooCommerce with customization using hooks and PHP snippets",
+        "Implementation of wholesale catalog with price rules and advanced categories",
+        "Performance optimization (caching, images, minification) achieving load times under three seconds",
+        "Integration of payment gateway and automatic transactional emails",
+        "Security hardening (least-privilege roles, scheduled backups, SSL, protection against common attacks)"
+      ],
+      "url": "https://distrimarcassjg.com/"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Surcolombiana",
+      "area": "Software Engineering",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2020-08",
+      "endDate": "2025-06",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "SENA",
+      "area": "Multimedia Production",
+      "studyType": "Technologist Degree",
+      "startDate": "2018-02",
+      "endDate": "2020-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Diploma in Programming Fundamentals in Python Language",
+      "date": "2022-07",
+      "issuer": "Ministry of ICT"
+    },
+    {
+      "name": "Diploma in Basic Programming in Java Language",
+      "date": "2022-09",
+      "issuer": "Ministry of ICT"
+    },
+    {
+      "name": "Diploma in Mobile Application Development",
+      "date": "2022-12",
+      "issuer": "Ministry of ICT"
+    },
+    {
+      "name": "Scrum Fundamentals Certified",
+      "date": "2022-05",
+      "issuer": "VMEdu Inc."
+    },
+    {
+      "name": "Basic English 1: Elementary",
+      "date": "2021-04",
+      "issuer": "King's College London"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Development of a Model for Detection and Classification of Diseases in Tomato Plants Using Swin Transformer Architecture",
+      "publisher": "Research Square",
+      "releaseDate": "2023-11-22",
+      "url": "https://dx.doi.org/10.21203/rs.3.rs-3618075/v1",
+      "summary": "This research focuses on developing a model for the detection and classification of diseases in tomato plants using the Swin Transformer architecture. The model aims to surpass the accuracy limitations of current Convolutional Neural Networks (CNN) methods. The study involves constructing a balanced dataset for various tomato plant diseases, evaluating the model's predictions, and comparing its accuracy with CNN-based models."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend",
+      "level": "",
+      "keywords": ["HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      "name": "Backend",
+      "level": "",
+      "keywords": ["Node.js", "Express", "Swagger"]
+    },
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": ["PostgreSQL", "MongoDB", "MySQL"]
+    },
+    {
+      "name": "Tools, Platforms and Methodologies",
+      "level": "",
+      "keywords": ["Git", "GitHub", "Scrum"]
+    },
+    {
+      "name": "E-commerce & CMS",
+      "level": "",
+      "keywords": ["WordPress", "WooCommerce"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ],
+  "projects": [
+    {
+      "name": "horarios_app: Web-Based Schedule Manager",
+      "description": "Full-stack web application for creating and managing schedules. Demonstrates skills in UI/UX, backend, and deployment.",
+      "highlights": [
+        "Full-stack development with Vanilla JavaScript, Node.js, and Express",
+        "Interactive and responsive interface for schedule management",
+        "Automated conflict management and assignments"
+      ],
+      "keywords": [
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "Vanilla JS",
+        "Full-Stack Development"
+      ],
+      "url": "https://horarios-application.netlify.app/",
+      "roles": ["Full-Stack Developer"],
+      "entity": "Personal Project",
+      "type": "application"
+    },
+    {
+      "name": "printNelsy: Image Printing Assistant",
+      "description": "Web application for manipulating, organizing, and printing images using Fabric.js. Developed for the family business 'Nelsy Stationery'. Includes multiple image upload, drag and drop support, image manipulation (resize, rotate, crop, effects), design creation (collages, grids), and optimized printing with different paper sizes and orientations.",
+      "highlights": [
+        "Advanced image manipulation with Fabric.js",
+        "Intuitive drag and drop interface",
+        "Printing optimization (collages, grids, different paper sizes)",
+        "Used in family business to print dozens of images weekly"
+      ],
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6+",
+        "Fabric.js",
+        "SweetAlert2",
+        "Font Awesome"
+      ],
+      "url": "https://print-nelsy.vercel.app/",
+      "roles": ["Frontend Developer"],
+      "entity": "Personal/Family Project",
+      "type": "application"
+    },
+    {
+      "name": "Distri Marcas SJG: Wholesale E-commerce",
+      "description": "E-commerce website developed for a wholesale company using WordPress and WooCommerce. Features custom catalog, wholesale pricing management, and performance optimization.",
+      "highlights": [
+        "Development with WordPress and WooCommerce",
+        "Customization using hooks and PHP snippets",
+        "Performance and security optimization",
+        "Payment gateway integration"
+      ],
+      "keywords": [
+        "WordPress",
+        "WooCommerce",
+        "PHP",
+        "E-commerce",
+        "Performance Optimization"
+      ],
+      "url": "https://distrimarcassjg.com/",
+      "roles": ["Freelance Web Developer"],
+      "entity": "Commercial Project",
+      "type": "website"
+    }
+  ]
+}
