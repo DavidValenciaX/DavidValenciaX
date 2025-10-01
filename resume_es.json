@@ -5,7 +5,7 @@
     "image": "https://s.gravatar.com/avatar/1fe920b6e79b5881c1d20fbc0e021f67?s=256",
     "email": "davidvalencia0526@gmail.com",
     "phone": "+57 317 374 3023",
-    "summary": "Ingeniero de software full-stack con experiencia demostrable. Dominio de JavaScript (ES6+), Node.js, Express.js, MongoDB, arquitectura de software, testing automatizado y CI/CD. Capaz de diseñar y desplegar productos escalables usando metodologías ágiles y control de versiones. Busco incorporarme como desarrollador a un equipo donde aportar soluciones innovadoras.",
+    "summary": "Ingeniero de software full-stack con experiencia demostrable. Dominio de JavaScript, Node.js, Express.js, MongoDB, arquitectura de software, testing automatizado y CI/CD. Capaz de diseñar y desplegar productos escalables usando metodologías ágiles y control de versiones. Busco incorporarme como desarrollador a un equipo donde aportar soluciones innovadoras.",
     "location": {
       "city": "Neiva",
       "countryCode": "CO",
@@ -33,11 +33,10 @@
       "endDate": "2025-08",
       "description": "Desarrollo e implementación de un sitio web de comercio electrónico para una empresa mayorista, integrando WordPress y WooCommerce. Personalización de funcionalidades, configuración de hosting y optimización de rendimiento.",
       "highlights": [
-        "Configuración e integración de WooCommerce con personalización mediante hooks y snippets PHP",
+        "Configuración e integración de WooCommerce",
         "Implementación de catálogo mayorista con reglas de precios y categorías avanzadas",
-        "Optimización de rendimiento (caché, imágenes, minificación) logrando tiempos de carga menores a tres segundos",
-        "Integración de pasarela de pagos y correos transaccionales automáticos",
-        "Hardening de seguridad (roles mínimos, backups programados, SSL, protección contra ataques comunes)"
+        "Optimización de rendimiento (caché, imágenes, minificación)",
+        "Integración de pasarela de pagos y correos transaccionales automáticos"
       ],
       "url": "https://distrimarcassjg.com/"
     }
@@ -102,7 +101,7 @@
     {
       "name": "Frontend",
       "level": "",
-      "keywords": ["HTML5", "CSS3", "JavaScript"]
+      "keywords": ["HTML", "CSS", "JavaScript"]
     },
     {
       "name": "Backend",
@@ -112,7 +111,7 @@
     {
       "name": "Bases de Datos",
       "level": "",
-      "keywords": ["PostgreSQL", "MongoDB", "MySQL"]
+      "keywords": ["PostgreSQL", "MongoDB"]
     },
     {
       "name": "Herramientas, Plataformas y Metodologías",
@@ -137,18 +136,20 @@
   ],
   "projects": [
     {
-      "name": "horarios_app: Gestor de Horarios Basado en Web",
-      "description": "Aplicación web full-stack para crear y gestionar horarios. Demuestra habilidades en UI/UX, backend y despliegue.",
+      "name": "horarios_app: Generador de Combinaciones de Horarios",
+      "description": "Aplicación web full-stack que genera automáticamente todas las combinaciones posibles de horarios a partir de múltiples opciones, permitiendo explorar y comparar distintas alternativas sin conflictos de horario.",
       "highlights": [
         "Desarrollo full-stack con Vanilla JavaScript, Node.js y Express",
-        "Interfaz interactiva y responsive para la gestión de horarios",
-        "Gestión automatizada de conflictos y asignaciones"
+        "Algoritmo de generación automática de todas las combinaciones viables de horarios",
+        "Detección inteligente de conflictos de horario entre eventos",
+        "Interfaz interactiva y responsive para visualizar y comparar múltiples opciones"
       ],
       "keywords": [
         "JavaScript",
         "Node.js",
         "Express",
-        "Vanilla JS",
+        "MongoDB",
+        "Swagger",
         "Full-Stack Development"
       ],
       "url": "https://horarios-application.netlify.app/",
@@ -158,17 +159,16 @@
     },
     {
       "name": "printNelsy: Asistente de Impresión de Imágenes",
-      "description": "Aplicación web para manipular, organizar e imprimir imágenes usando Fabric.js. Desarrollada para el negocio familiar 'Papelería Nelsy'. Incluye funciones de carga múltiple de imágenes, soporte de arrastrar y soltar, manipulación de imágenes (redimensionar, rotar, recortar, efectos), creación de diseños (collages, cuadrículas) e impresión optimizada con diferentes tamaños y orientaciones de papel.",
+      "description": "Aplicación web para manipular, organizar e imprimir imágenes usando Fabric.js. Incluye funciones de carga múltiple de imágenes, soporte para arrastrar y soltar, manipulación de imágenes (redimensionar, rotar, recortar, efectos), creación de diseños (collages, cuadrículas) e impresión optimizada con diferentes tamaños y orientaciones de papel.",
       "highlights": [
         "Manipulación avanzada de imágenes con Fabric.js",
-        "Interfaz intuitiva de arrastrar y soltar",
-        "Optimización para impresión (collages, cuadrículas, diferentes tamaños de papel)",
-        "Usada en negocio familiar para imprimir decenas de imágenes semanales"
+        "Interfaz intuitiva y accesible",
+        "Optimización para impresión (collages, cuadrículas, diferentes tamaños de papel)"
       ],
       "keywords": [
         "HTML5",
         "CSS3",
-        "JavaScript ES6+",
+        "JavaScript",
         "Fabric.js",
         "SweetAlert2",
         "Font Awesome"
@@ -180,17 +180,16 @@
     },
     {
       "name": "Distri Marcas SJG: E-commerce Mayorista",
-      "description": "Sitio web de comercio electrónico desarrollado para empresa mayorista usando WordPress y WooCommerce. Incluye catálogo personalizado, gestión de precios mayoristas y optimización de rendimiento.",
+      "description": "Sitio web de comercio electrónico desarrollado para empresa mayorista usando WordPress y WooCommerce. Incluye catálogo personalizado, gestión de inventarios y pasarela de pagos.",
       "highlights": [
         "Desarrollo con WordPress y WooCommerce",
-        "Personalización mediante hooks y snippets PHP",
-        "Optimización de rendimiento y seguridad",
+        "Optimización de rendimiento",
+        "Gestión de inventarios",
         "Integración de pasarelas de pago"
       ],
       "keywords": [
         "WordPress",
         "WooCommerce",
-        "PHP",
         "E-commerce",
         "Performance Optimization"
       ],
