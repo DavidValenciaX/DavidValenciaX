@@ -167,6 +167,8 @@
         "Swagger",
         "Full-Stack Development"
       ],
+      "startDate": "2023-07",
+      "endDate": "2025-07",
       "url": "https://horarios-application.netlify.app/",
       "roles": ["Desarrollador Full-Stack"],
       "entity": "Proyecto Personal",
@@ -188,6 +190,8 @@
         "SweetAlert2",
         "Font Awesome"
       ],
+      "startDate": "2024-08",
+      "endDate": "2025-07",
       "url": "https://print-nelsy.vercel.app/",
       "roles": ["Desarrollador Frontend"],
       "entity": "Proyecto Personal/Familiar",
@@ -208,6 +212,8 @@
         "E-commerce",
         "Performance Optimization"
       ],
+      "startDate": "2025-07",
+      "endDate": "2025-08",
       "url": "https://distrimarcassjg.com/",
       "roles": ["Desarrollador Web Freelance"],
       "entity": "Proyecto Comercial",
