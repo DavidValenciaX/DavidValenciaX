@@ -33,11 +33,10 @@
       "endDate": "2025-08",
       "description": "Development and implementation of an e-commerce website for a wholesale company, integrating WordPress and WooCommerce. Customization of functionalities, hosting configuration, and performance optimization.",
       "highlights": [
-        "Configuration and integration of WooCommerce with customization using hooks and PHP snippets",
+        "Configuration and integration of WooCommerce",
         "Implementation of wholesale catalog with price rules and advanced categories",
-        "Performance optimization (caching, images, minification) achieving load times under three seconds",
-        "Integration of payment gateway and automatic transactional emails",
-        "Security hardening (least-privilege roles, scheduled backups, SSL, protection against common attacks)"
+        "Performance optimization (caching, images, minification)",
+        "Integration of payment gateway and automatic transactional emails"
       ],
       "url": "https://distrimarcassjg.com/"
     }
@@ -102,17 +101,32 @@
     {
       "name": "Frontend",
       "level": "",
-      "keywords": ["HTML5", "CSS3", "JavaScript"]
+      "keywords": ["HTML", "CSS", "JavaScript"]
     },
     {
       "name": "Backend",
       "level": "",
-      "keywords": ["Node.js", "Express", "Swagger"]
+      "keywords": ["Node.js", "Express"]
+    },
+    {
+      "name": "Documentation",
+      "level": "",
+      "keywords": ["Swagger"]
     },
     {
       "name": "Databases",
       "level": "",
-      "keywords": ["PostgreSQL", "MongoDB", "MySQL"]
+      "keywords": ["PostgreSQL", "MongoDB"]
+    },
+    {
+      "name": "Testing",
+      "level": "",
+      "keywords": ["Jest"]
+    },
+    {
+      "name": "CI/CD",
+      "level": "",
+      "keywords": ["GitHub Actions"]
     },
     {
       "name": "Tools, Platforms and Methodologies",
@@ -137,20 +151,24 @@
   ],
   "projects": [
     {
-      "name": "horarios_app: Web-Based Schedule Manager",
-      "description": "Full-stack web application for creating and managing schedules. Demonstrates skills in UI/UX, backend, and deployment.",
+      "name": "horarios_app: Schedule Combination Generator",
+      "description": "Full-stack web application that automatically generates all possible schedule combinations from multiple options, allowing users to explore and compare different alternatives without schedule conflicts.",
       "highlights": [
         "Full-stack development with Vanilla JavaScript, Node.js, and Express",
-        "Interactive and responsive interface for schedule management",
-        "Automated conflict management and assignments"
+        "Automatic generation algorithm for all viable schedule combinations",
+        "Intelligent detection of schedule conflicts between events",
+        "Interactive and responsive interface to visualize and compare multiple options"
       ],
       "keywords": [
         "JavaScript",
         "Node.js",
         "Express",
-        "Vanilla JS",
+        "MongoDB",
+        "Swagger",
         "Full-Stack Development"
       ],
+      "startDate": "2023-07",
+      "endDate": "2025-07",
       "url": "https://horarios-application.netlify.app/",
       "roles": ["Full-Stack Developer"],
       "entity": "Personal Project",
@@ -158,21 +176,22 @@
     },
     {
       "name": "printNelsy: Image Printing Assistant",
-      "description": "Web application for manipulating, organizing, and printing images using Fabric.js. Developed for the family business 'Nelsy Stationery'. Includes multiple image upload, drag and drop support, image manipulation (resize, rotate, crop, effects), design creation (collages, grids), and optimized printing with different paper sizes and orientations.",
+      "description": "Web application for manipulating, organizing, and printing images using Fabric.js. Includes multiple image upload, drag and drop support, image manipulation (resize, rotate, crop, effects), design creation (collages, grids), and optimized printing with different paper sizes and orientations.",
       "highlights": [
         "Advanced image manipulation with Fabric.js",
-        "Intuitive drag and drop interface",
-        "Printing optimization (collages, grids, different paper sizes)",
-        "Used in family business to print dozens of images weekly"
+        "Intuitive and accessible interface",
+        "Printing optimization (collages, grids, different paper sizes)"
       ],
       "keywords": [
         "HTML5",
         "CSS3",
-        "JavaScript ES6+",
+        "JavaScript",
         "Fabric.js",
         "SweetAlert2",
         "Font Awesome"
       ],
+      "startDate": "2024-08",
+      "endDate": "2025-07",
       "url": "https://print-nelsy.vercel.app/",
       "roles": ["Frontend Developer"],
       "entity": "Personal/Family Project",
@@ -180,20 +199,21 @@
     },
     {
       "name": "Distri Marcas SJG: Wholesale E-commerce",
-      "description": "E-commerce website developed for a wholesale company using WordPress and WooCommerce. Features custom catalog, wholesale pricing management, and performance optimization.",
+      "description": "E-commerce website developed for a wholesale company using WordPress and WooCommerce. Includes custom catalog, inventory management, and payment gateway.",
       "highlights": [
         "Development with WordPress and WooCommerce",
-        "Customization using hooks and PHP snippets",
-        "Performance and security optimization",
+        "Performance optimization",
+        "Inventory management",
         "Payment gateway integration"
       ],
       "keywords": [
         "WordPress",
         "WooCommerce",
-        "PHP",
         "E-commerce",
         "Performance Optimization"
       ],
+      "startDate": "2025-07",
+      "endDate": "2025-08",
       "url": "https://distrimarcassjg.com/",
       "roles": ["Freelance Web Developer"],
       "entity": "Commercial Project",
