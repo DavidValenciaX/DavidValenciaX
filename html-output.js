@@ -2,12 +2,12 @@ import { render } from './index.js';
 import { readFileSync, writeFileSync } from 'fs';
 
 // Constantes para archivos
-const RESUME_FILE_PATH = './resume.json';
+const RESUME_FILE_PATH = './resume_es.json';
 const OUTPUT_FILE_PATH = './resume.html';
 
 try {
-  // Leer el archivo resume.json
-  console.log('📖 Leyendo resume.json...');
+  // Leer el archivo resume_es.json
+  console.log('📖 Leyendo resume_es.json...');
   const resumeData = JSON.parse(readFileSync(RESUME_FILE_PATH, 'utf-8'));
   
   // Renderizar el tema

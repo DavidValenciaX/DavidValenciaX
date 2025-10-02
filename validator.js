@@ -1,7 +1,7 @@
 import resumeSchema from '@jsonresume/schema';
 import fs from 'fs';
 
-const resumeData = JSON.parse(fs.readFileSync('resume.json', 'utf8'));
+const resumeData = JSON.parse(fs.readFileSync('resume_es.json', 'utf8'));
 resumeSchema.validate(
   resumeData,
   function (err, report) {

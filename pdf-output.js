@@ -3,11 +3,11 @@ import { readFileSync } from 'fs';
 import puppeteer from 'puppeteer';
 import path from 'path';
 
-const RESUME_FILE_PATH = './resume.json';
+const RESUME_FILE_PATH = './resume_es.json';
 
 const generatePdf = async () => {
   try {
-    console.log('📖 Leyendo resume.json...');
+    console.log('📖 Leyendo resume_es.json...');
     const resumeData = JSON.parse(readFileSync(RESUME_FILE_PATH, 'utf-8'));
 
     const pdfFileName = `${resumeData.basics.name.replace(/ /g, '_')}_CV.pdf`;
