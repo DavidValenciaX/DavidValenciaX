@@ -165,6 +165,7 @@
       "startDate": "2023-07",
       "endDate": "2025-07",
       "url": "https://horarios-application.netlify.app/",
+      "repository": "https://github.com/DavidValenciaX/horarios_app",
       "roles": ["Full-Stack Developer"],
       "entity": "Personal Project",
       "type": "application"
@@ -188,6 +189,7 @@
       "startDate": "2024-08",
       "endDate": "2025-07",
       "url": "https://print-nelsy.vercel.app/",
+      "repository": "https://github.com/DavidValenciaX/printNelsy",
       "roles": ["Frontend Developer"],
       "entity": "Personal/Family Project",
       "type": "application"
