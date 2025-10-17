@@ -82,12 +82,11 @@ const CSS_STYLES = `
     }
     
     .profile-image {
-      width: 120px;
-      height: 120px;
-      min-width: 120px;
-      min-height: 120px;
-      max-width: 120px;
-      max-height: 120px;
+      width: auto;
+      height: 100%;
+      min-width: 80px;
+      max-width: 150px;
+      aspect-ratio: 1;
       border-radius: 25%;
       object-fit: cover;
       object-position: center;
@@ -382,12 +381,12 @@ const CSS_STYLES = `
       }
 
       .profile-image, .profile-image:hover {
-        width: 60px;
-        height: 60px;
-        min-width: 60px;
-        min-height: 60px;
-        max-width: 60px;
-        max-height: 60px;
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        min-height: 100px;
+        max-width: 100px;
+        max-height: 100px;
         box-shadow: none !important;
         border: 2px solid #e1e8ed !important;
         transform: none !important;
