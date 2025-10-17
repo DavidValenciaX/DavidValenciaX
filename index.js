@@ -608,9 +608,10 @@ const formatTextWithLineBreaks = (text) => {
 const renderHeader = (basics) => {
   if (!basics) return '';
   
-  const { name, label, email, phone, location, profiles, image } = basics;
+  const { name, label, email, phone, location, profiles, image, url } = basics;
   
   const contactItems = [
+    url && `<a href="${url}" class="contact-item" target="_blank" rel="noopener noreferrer">🌐 ${url}</a>`,
     email && `<a href="mailto:${email}" class="contact-item">${getIcon('EMAIL')}${email}</a>`,
     phone && `<span class="contact-item">${getIcon('PHONE')}${phone}</span>`,
     location && `<span class="contact-item">${getIcon('LOCATION')}${location.city}, ${location.region}, ${location.countryCode}</span>`
@@ -788,7 +789,12 @@ const renderProjects = (projects) => {
           ${project.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
         </ul>
       ` : ''}
-      ${project.url ? `<a href="${project.url}" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>` : ''}
+      ${(project.url || project.repository) ? `
+        <div>
+          ${project.url ? `<a href="${project.url}" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>` : ''}
+          ${project.repository ? ` · <a href="${project.repository}" class="project-link" target="_blank" rel="noopener noreferrer">Repositorio</a>` : ''}
+        </div>
+      ` : ''}
     </div>
   `).join('');
   
@@ -863,4 +869,4 @@ const render = (resume) => {
   `;
 };
 
-export { render }; 
+export { render };
