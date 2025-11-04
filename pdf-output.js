@@ -3,14 +3,19 @@ import { readFileSync } from 'fs';
 import puppeteer from 'puppeteer';
 import path from 'path';
 
-const RESUME_FILE_PATH = './resume_es.json';
+// Obtener archivo desde argumento CLI o variable de entorno
+const fileArg = process.argv.find(a => a.startsWith('--file='));
+const ENV_FILE = process.env.RESUME_FILE;
+const RESUME_FILE_PATH = fileArg ? fileArg.split('=')[1] : (ENV_FILE || './resume_es.json');
 
 const generatePdf = async () => {
   try {
-    console.log('📖 Leyendo resume_es.json...');
+    console.log(`📖 Leyendo ${RESUME_FILE_PATH}...`);
     const resumeData = JSON.parse(readFileSync(RESUME_FILE_PATH, 'utf-8'));
 
-    const pdfFileName = `${resumeData.basics.name.replace(/ /g, '_')}_CV.pdf`;
+    const baseName = path.basename(RESUME_FILE_PATH, '.json');
+    const suffix = baseName.endsWith('_en') ? '_en' : (baseName.endsWith('_es') ? '_es' : '');
+    const pdfFileName = `${resumeData.basics.name.replace(/ /g, '_')}_CV${suffix}.pdf`;
     const pdfOutputPath = path.resolve(process.cwd(), pdfFileName);
 
     console.log('🎨 Renderizando tema...');
@@ -62,4 +67,4 @@ const generatePdf = async () => {
   }
 };
 
-generatePdf(); 
+generatePdf();

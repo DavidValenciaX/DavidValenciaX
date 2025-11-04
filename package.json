@@ -8,7 +8,22 @@
     "start": "node index.js",
     "pdf": "node pdf-output.js",
     "pdf:mobile": "node pdf-output-mobile.js",
-    "html": "node html-output.js"
+    "html": "node html-output.js",
+    "html:es": "node html-output.js --file=resume_es.json",
+    "html:en": "node html-output.js --file=resume_en.json",
+    "html:cli:elegant:es": "npx --package resume-cli resume export resume_es_elegant.html -r resume_es.json -t jsonresume-theme-elegant",
+    "html:cli:elegant:en": "npx --package resume-cli resume export resume_en_elegant.html -r resume_en.json -t jsonresume-theme-elegant",
+    "html:professional:es": "node html-output-professional.js --file=resume_es.json",
+    "html:professional:en": "node html-output-professional.js --file=resume_en.json",
+    "build:theme:professional": "node scripts/build-professional-theme.mjs",
+    "html:cli:professional:es": "npx --package resume-cli resume export resume_es_professional.html -r resume_es.json -t @jsonresume/jsonresume-theme-professional",
+    "html:cli:professional:en": "npx --package resume-cli resume export resume_en_professional.html -r resume_en.json -t @jsonresume/jsonresume-theme-professional",
+    "html:cli:professional:es:bundled": "npm run build:theme:professional && npx --package resume-cli resume export resume_es_professional.html -r resume_es.json -t ./build/jsonresume-theme-professional/index.cjs",
+    "html:cli:professional:en:bundled": "npm run build:theme:professional && npx --package resume-cli resume export resume_en_professional.html -r resume_en.json -t ./build/jsonresume-theme-professional/index.cjs",
+    "pdf:es": "node pdf-output.js --file=resume_es.json",
+    "pdf:en": "node pdf-output.js --file=resume_en.json",
+    "pdf:mobile:es": "node pdf-output-mobile.js --file=resume_es.json",
+    "pdf:mobile:en": "node pdf-output-mobile.js --file=resume_en.json"
   },
   "keywords": [
     "jsonresume",
@@ -25,12 +40,18 @@
     "url": "git+https://github.com/DavidValenciaX/jsonresume-theme-minimal-clean.git"
   },
   "dependencies": {
+    "@jsonresume/jsonresume-theme-professional": "^1.0.18",
     "@jsonresume/schema": "^1.2.1",
     "jsonresume-theme-elegant": "^1.16.1",
     "jsonresume-theme-even": "^0.26.0",
     "jsonresume-theme-professional": "^1.1.0",
     "puppeteer": "^24.11.2",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "styled-components": "^6.1.19"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.12",
+    "resume-cli": "^3.0.8"
   }
 }
