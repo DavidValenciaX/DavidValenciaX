@@ -148,7 +148,7 @@
   "projects": [
     {
       "name": "horarios_app: Generador de Combinaciones de Horarios",
-      "description": "Aplicación web full-stack que genera automáticamente todas las combinaciones posibles de horarios a partir de múltiples opciones, permitiendo explorar y comparar distintas alternativas sin conflictos de horario.",
+      "description": "Generador de combinaciones de horarios que automatiza la creación de cronogramas óptimos y sin conflictos.",
       "highlights": [
         "Desarrollo full-stack con Vanilla JavaScript, Node.js y Express",
         "Algoritmo de generación automática de todas las combinaciones viables de horarios",
@@ -173,7 +173,7 @@
     },
     {
       "name": "printNelsy: Asistente de Impresión de Imágenes",
-      "description": "Aplicación web para manipular, organizar e imprimir imágenes usando Fabric.js. Incluye funciones de carga múltiple de imágenes, soporte para arrastrar y soltar, manipulación de imágenes (redimensionar, rotar, recortar, efectos), creación de diseños (collages, cuadrículas) e impresión optimizada con diferentes tamaños y orientaciones de papel.",
+      "description": "Organizador de imágenes para impresión, que ofrece ordenamiento manual o automático de imágenes en cuadrículas o collages.",
       "highlights": [
         "Manipulación avanzada de imágenes con Fabric.js",
         "Interfaz intuitiva y accesible",
@@ -197,7 +197,7 @@
     },
     {
       "name": "Distri Marcas SJG: E-commerce Mayorista",
-      "description": "Sitio web de comercio electrónico desarrollado para empresa mayorista usando WordPress y WooCommerce. Incluye catálogo personalizado, gestión de inventarios y pasarela de pagos.",
+      "description": "Plataforma e-commerce mayorista con catálogo B2B, gestión de inventarios y pagos seguros.",
       "highlights": [
         "Desarrollo con WordPress y WooCommerce",
         "Optimización de rendimiento",
