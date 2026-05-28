@@ -11,14 +11,16 @@
     "html": "node html-output.js",
     "html:es": "node html-output.js --file=resume_es.json",
     "html:en": "node html-output.js --file=resume_en.json",
-    "html:cli:elegant:es": "npx --package resume-cli resume export resume_es_elegant.html -r resume_es.json -t jsonresume-theme-elegant",
-    "html:cli:elegant:en": "npx --package resume-cli resume export resume_en_elegant.html -r resume_en.json -t jsonresume-theme-elegant",
     "html:cli:professional:es:bundled": "node scripts/build-professional-theme.mjs && npx --package resume-cli resume export resume_es_professional.html -r resume_es.json -t ./build/jsonresume-theme-professional/index.cjs",
     "html:cli:professional:en:bundled": "node scripts/build-professional-theme.mjs && npx --package resume-cli resume export resume_en_professional.html -r resume_en.json -t ./build/jsonresume-theme-professional/index.cjs",
+    "html:cli:stackoverflow:es": "node -e \"require('fs').mkdirSync('stack_overflow', { recursive: true })\" && npx --package resume-cli resume export stack_overflow/resume_es_stackoverflow.html -r resume_es.json -t jsonresume-theme-stackoverflow",
+    "html:cli:stackoverflow:en": "node -e \"require('fs').mkdirSync('stack_overflow', { recursive: true })\" && npx --package resume-cli resume export stack_overflow/resume_en_stackoverflow.html -r resume_en.json -t jsonresume-theme-stackoverflow",
     "pdf:es": "node pdf-output.js --file=resume_es.json",
     "pdf:en": "node pdf-output.js --file=resume_en.json",
     "pdf:mobile:es": "node pdf-output-mobile.js --file=resume_es.json",
-    "pdf:mobile:en": "node pdf-output-mobile.js --file=resume_en.json"
+    "pdf:mobile:en": "node pdf-output-mobile.js --file=resume_en.json",
+    "pdf:cli:stackoverflow:es": "node -e \"require('fs').mkdirSync('stack_overflow', { recursive: true })\" && npx --package resume-cli resume export stack_overflow/Oscar_David_Valencia_resume_es_stackoverflow.pdf -r resume_es.json -t jsonresume-theme-stackoverflow",
+    "pdf:cli:stackoverflow:en": "node -e \"require('fs').mkdirSync('stack_overflow', { recursive: true })\" && npx --package resume-cli resume export stack_overflow/Oscar_David_Valencia_resume_en_stackoverflow.pdf -r resume_en.json -t jsonresume-theme-stackoverflow"
   },
   "keywords": [
     "jsonresume",
@@ -37,9 +39,7 @@
   "dependencies": {
     "@jsonresume/jsonresume-theme-professional": "^1.0.18",
     "@jsonresume/schema": "^1.2.1",
-    "jsonresume-theme-elegant": "^1.16.1",
-    "jsonresume-theme-even": "^0.26.0",
-    "jsonresume-theme-professional": "^1.1.0",
+    "jsonresume-theme-stackoverflow": "^3.3.0",
     "puppeteer": "^24.11.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
