@@ -63,7 +63,7 @@
       "area": "Ingeniería de software",
       "studyType": "Grado en Ingeniería",
       "startDate": "2020-08",
-      "endDate": "2025-08",
+      "endDate": "2025-06",
       "score": "",
       "courses": []
     },
@@ -183,6 +183,7 @@
       "startDate": "2025-12",
       "endDate": "2026-05",
       "url": "https://ascuita.web.app/",
+      "repository": "https://github.com/DavidValenciaX/ascuita",
       "roles": ["Desarrollador Full-Stack"],
       "entity": "Proyecto Personal",
       "type": "application"
