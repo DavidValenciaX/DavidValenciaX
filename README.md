@@ -135,8 +135,9 @@ Development and implementation of an e-commerce website for a wholesale company,
 
 ## 📊 GitHub Stats
 
-![David's GitHub stats](https://github-readme-stats.vercel.app/api?username=DavidValenciaX&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DavidValenciaX&layout=compact&theme=radical)
+[![GitHub followers](https://img.shields.io/github/followers/DavidValenciaX?style=flat-square&logo=github&label=Followers)](https://github.com/DavidValenciaX?tab=followers)
+[![GitHub stars](https://img.shields.io/github/stars/DavidValenciaX?affiliations=OWNER%2CCOLLABORATOR&style=flat-square&logo=github&label=Stars)](https://github.com/DavidValenciaX?tab=repositories)
+[![GitHub profile](https://img.shields.io/badge/GitHub-View%20profile-181717?style=flat-square&logo=github)](https://github.com/DavidValenciaX)
 
 ---
 
