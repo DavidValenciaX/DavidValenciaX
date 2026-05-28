@@ -69,3 +69,8 @@ pids
 # Lock files (opcional, dependiendo de tu preferencia)
 # package-lock.json
 # yarn.lock 
+
+# Resume files
+/html
+/pdf
+/pdf_mobile
