@@ -6,7 +6,7 @@
     "email": "davidvalencia0526@gmail.com",
     "phone": "+57 317 374 3023",
     "url": "https://davidvalencia.site/",
-    "summary": "Ingeniero de software full-stack con experiencia demostrable. Dominio de JavaScript, Node.js, Express.js, MongoDB, arquitectura de software, testing automatizado y CI/CD. Capaz de diseñar y desplegar productos escalables usando metodologías ágiles y control de versiones. Busco incorporarme como desarrollador a un equipo donde aportar soluciones innovadoras.",
+    "summary": "Ingeniero de software full-stack con experiencia como backend developer en plataformas omnicanal, e-commerce y productos web. Dominio de JavaScript, Node.js, Express.js, Python, Google Cloud, Firebase, Firestore, Kubernetes, MongoDB, arquitectura de software, testing automatizado y CI/CD. Capaz de diseñar y desplegar productos escalables usando metodologías ágiles y control de versiones.",
     "location": {
       "city": "Neiva",
       "countryCode": "CO",
@@ -26,6 +26,21 @@
     ]
   },
   "work": [
+    {
+      "name": "Piyion",
+      "position": "Backend Developer",
+      "location": "Remoto",
+      "startDate": "2025-12",
+      "endDate": "",
+      "description": "Desarrollo backend para una plataforma omnicanal de atención conversacional, gestión de redes sociales y campañas publicitarias masivas. Participación en la construcción de servicios escalables, flujos de datos y funcionalidades integradas con infraestructura cloud.",
+      "highlights": [
+        "Desarrollo de servicios backend con Python para funcionalidades de chat center omnicanal",
+        "Integración y gestión de datos usando Firebase y Firestore",
+        "Trabajo con servicios en Google Cloud y despliegues sobre Kubernetes",
+        "Implementación de pruebas automatizadas con Pytest para mejorar la confiabilidad del backend"
+      ],
+      "url": ""
+    },
     {
       "name": "Distri Marcas SJG",
       "position": "Desarrollador Web Freelance",
@@ -102,7 +117,7 @@
     {
       "name": "Backend",
       "level": "",
-      "keywords": ["Node.js", "Express"]
+      "keywords": ["Node.js", "Express", "Python"]
     },
     {
       "name": "Documentación",
@@ -112,22 +127,27 @@
     {
       "name": "Bases de Datos",
       "level": "",
-      "keywords": ["PostgreSQL", "MongoDB"]
+      "keywords": ["PostgreSQL", "MongoDB", "Firestore"]
     },
     {
       "name": "Testing",
       "level": "",
-      "keywords": ["Jest"]
+      "keywords": ["Jest", "Pytest"]
     },
     {
       "name": "CI/CD",
       "level": "",
-      "keywords": ["GitHub Actions"]
+      "keywords": ["GitHub Actions", "Kubernetes"]
     },
     {
       "name": "Control de Versiones",
       "level": "",
       "keywords": ["Git", "GitHub"]
+    },
+    {
+      "name": "Cloud & BaaS",
+      "level": "",
+      "keywords": ["Google Cloud", "Firebase"]
     },
     {
       "name": "E-commerce & CMS",
@@ -146,6 +166,27 @@
     }
   ],
   "projects": [
+    {
+      "name": "Ascuita",
+      "description": "Voice agent companion diseñado como asistente conversacional personal para interactuar mediante voz desde la web.",
+      "highlights": [
+        "Desarrollo de una experiencia web orientada a interacción por voz",
+        "Diseño de flujos conversacionales para asistencia personal",
+        "Despliegue público como aplicación web en Firebase Hosting"
+      ],
+      "keywords": [
+        "Voice AI",
+        "JavaScript",
+        "Firebase",
+        "Web App"
+      ],
+      "startDate": "2025-12",
+      "endDate": "2026-05",
+      "url": "https://ascuita.web.app/",
+      "roles": ["Desarrollador Full-Stack"],
+      "entity": "Proyecto Personal",
+      "type": "application"
+    },
     {
       "name": "Horarios App",
       "description": "Generador de combinaciones de horarios que automatiza la creación de cronogramas óptimos y sin conflictos.",
