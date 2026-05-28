@@ -50,6 +50,12 @@ npm run html:stackoverflow:en
 
 ## Version PDF
 
+Todas las versiones PDF en ambos idiomas:
+
+```bash
+npm run pdf:all
+```
+
 Tema propio:
 
 ```bash

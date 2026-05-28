@@ -31,7 +31,6 @@
       "position": "Backend Developer",
       "location": "Remote",
       "startDate": "2025-12",
-      "endDate": "",
       "description": "Backend development for an omnichannel conversational support, social media management, and mass advertising campaign platform. Contributed to scalable services, data flows, and cloud-integrated product features.",
       "highlights": [
         "Developed backend services with Python for omnichannel chat center features",
@@ -39,7 +38,7 @@
         "Worked with Google Cloud services and Kubernetes-based deployments",
         "Implemented automated tests with Pytest to improve backend reliability"
       ],
-      "url": ""
+      "url": "https://piyion.com/"
     },
     {
       "name": "Distri Marcas SJG",

@@ -31,7 +31,6 @@
       "position": "Backend Developer",
       "location": "Remoto",
       "startDate": "2025-12",
-      "endDate": "",
       "description": "Desarrollo backend para una plataforma omnicanal de atención conversacional, gestión de redes sociales y campañas publicitarias masivas. Participación en la construcción de servicios escalables, flujos de datos y funcionalidades integradas con infraestructura cloud.",
       "highlights": [
         "Desarrollo de servicios backend con Python para funcionalidades de chat center omnicanal",
@@ -39,7 +38,7 @@
         "Trabajo con servicios en Google Cloud y despliegues sobre Kubernetes",
         "Implementación de pruebas automatizadas con Pytest para mejorar la confiabilidad del backend"
       ],
-      "url": ""
+      "url": "https://piyion.com/"
     },
     {
       "name": "Distri Marcas SJG",
