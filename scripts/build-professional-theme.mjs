@@ -8,7 +8,7 @@ const candidateUnscoped = 'node_modules/jsonresume-theme-professional/src/index.
 const defaultEntry = fs.existsSync(candidateScoped) ? candidateScoped : candidateUnscoped;
 
 const entry = process.env.npm_config_entry || defaultEntry;
-const outFile = process.env.npm_config_outfile || 'build/jsonresume-theme-professional/index.cjs';
+const outFile = process.env.npm_config_outfile || 'scripts/professional-theme.cjs';
 
 if (!fs.existsSync(entry)) {
   console.error('Cannot find professional theme entry. Ensure it is installed.');
@@ -17,29 +17,6 @@ if (!fs.existsSync(entry)) {
 
 const outDir = path.dirname(outFile);
 fs.mkdirSync(outDir, { recursive: true });
-
-// Copy fonts from the theme's assets to the build directory
-const copyFonts = () => {
-  // The theme's assets/fonts directory is relative to its src/index.js entry point
-  const sourceFontsDir = path.resolve(path.dirname(entry), '../assets/fonts');
-  const destFontsDir = path.join(outDir, 'fonts');
-
-  if (fs.existsSync(sourceFontsDir)) {
-    if (!fs.existsSync(destFontsDir)) {
-      fs.mkdirSync(destFontsDir, { recursive: true });
-    }
-    fs.readdirSync(sourceFontsDir).forEach(file => {
-      const srcFile = path.join(sourceFontsDir, file);
-      const destFile = path.join(destFontsDir, file);
-      fs.copyFileSync(srcFile, destFile);
-    });
-    console.log('Successfully copied fonts.');
-  } else {
-    console.warn(`Fonts directory not found in theme package. Looked in: ${sourceFontsDir}`);
-  }
-};
-
-copyFonts();
 
 await build({
   entryPoints: [entry],
@@ -53,13 +30,18 @@ await build({
   jsxImportSource: 'react'
 });
 
-// Patch the bundled file to use relative font paths
+// Patch the bundled file to resolve fonts from the repo-level fonts/ folder.
+// Generated HTML lives in html/, so "../fonts/..." points to the right place.
 try {
   let content = fs.readFileSync(outFile, 'utf-8');
-  // This regex replaces absolute font paths like "/fonts/..." with relative ones "fonts/..."
-  content = content.replace(/"\/fonts\//g, '"fonts/');
+  content = content
+    .replace(/"\/fonts\//g, '"../fonts/')
+    .replace(/"fonts\//g, '"../fonts/')
+    .replace(/lmsans10-regular\.otf/g, 'lmroman10-regular.otf')
+    .replace(/lmsans10-bold\.otf/g, 'lmroman10-bold.otf')
+    .replace(/lmsans10-italic\.otf/g, 'lmroman10-italic.otf');
   fs.writeFileSync(outFile, content, 'utf-8');
-  console.log('Successfully patched font paths in the theme.');
+  console.log('Successfully patched professional theme font paths.');
 } catch (error) {
   console.error('Error patching font paths:', error);
 }
