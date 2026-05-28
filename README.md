@@ -43,9 +43,9 @@ Development and implementation of an e-commerce website for a wholesale company,
 
 ## 🚀 Projects
 
-### horarios_app: Schedule Combination Generator
+### Horarios App
 
-- **Description:** Full-stack web application that automatically generates all possible schedule combinations from multiple options, allowing users to explore and compare different alternatives without schedule conflicts.
+- **Description:** Schedule combination generator that automates the creation of optimal, conflict-free schedules.
 - **Highlights:**
   - Full-stack development with Vanilla JavaScript, Node.js, and Express
   - Automatic generation algorithm for all viable schedule combinations
@@ -56,9 +56,9 @@ Development and implementation of an e-commerce website for a wholesale company,
 - **[Live Demo](https://horarios-application.netlify.app/)**
 - **[GitHub Repository](https://github.com/DavidValenciaX/horarios_app)**
 
-### printNelsy: Image Printing Assistant
+### Print Nelsy
 
-- **Description:** Web application for manipulating, organizing, and printing images using Fabric.js. Includes multiple image upload, drag and drop support, image manipulation (resize, rotate, crop, effects), design creation (collages, grids), and optimized printing with different paper sizes and orientations.
+- **Description:** Image organizer for printing, offering manual or automatic sorting of images into grids or collages.
 - **Highlights:**
   - Advanced image manipulation with Fabric.js
   - Intuitive and accessible interface
@@ -68,9 +68,9 @@ Development and implementation of an e-commerce website for a wholesale company,
 - **[Live Demo](https://print-nelsy.vercel.app/)**
 - **[GitHub Repository](https://github.com/DavidValenciaX/printNelsy)**
 
-### Distri Marcas SJG: Wholesale E-commerce
+### Distri Marcas SJG
 
-- **Description:** E-commerce website developed for a wholesale company using WordPress and WooCommerce. Includes custom catalog, inventory management, and payment gateway.
+- **Description:** Wholesale e-commerce platform with B2B catalog, inventory management, and secure payments.
 - **Highlights:**
   - Development with WordPress and WooCommerce
   - Performance optimization

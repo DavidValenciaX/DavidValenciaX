@@ -147,7 +147,7 @@
   ],
   "projects": [
     {
-      "name": "horarios_app: Generador de Combinaciones de Horarios",
+      "name": "Horarios App",
       "description": "Generador de combinaciones de horarios que automatiza la creación de cronogramas óptimos y sin conflictos.",
       "highlights": [
         "Desarrollo full-stack con Vanilla JavaScript, Node.js y Express",
@@ -172,7 +172,7 @@
       "type": "application"
     },
     {
-      "name": "printNelsy: Asistente de Impresión de Imágenes",
+      "name": "Print Nelsy",
       "description": "Organizador de imágenes para impresión, que ofrece ordenamiento manual o automático de imágenes en cuadrículas o collages.",
       "highlights": [
         "Manipulación avanzada de imágenes con Fabric.js",
@@ -192,11 +192,11 @@
       "url": "https://print-nelsy.vercel.app/",
       "repository": "https://github.com/DavidValenciaX/printNelsy",
       "roles": ["Desarrollador Frontend"],
-      "entity": "Proyecto Personal/Familiar",
+      "entity": "Proyecto Personal",
       "type": "application"
     },
     {
-      "name": "Distri Marcas SJG: E-commerce Mayorista",
+      "name": "Distri Marcas SJG",
       "description": "Plataforma e-commerce mayorista con catálogo B2B, gestión de inventarios y pagos seguros.",
       "highlights": [
         "Desarrollo con WordPress y WooCommerce",
