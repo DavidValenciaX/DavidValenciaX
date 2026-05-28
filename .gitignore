@@ -71,6 +71,7 @@ pids
 # yarn.lock 
 
 # Resume files
+/build
 /html
 /pdf
 /pdf_mobile

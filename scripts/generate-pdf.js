@@ -1,12 +1,12 @@
-import { render } from './index.js';
-import { readFileSync } from 'fs';
+import { render } from '../index.js';
+import { mkdirSync, readFileSync } from 'fs';
 import puppeteer from 'puppeteer';
 import path from 'path';
 
-// Obtener archivo desde argumento CLI o variable de entorno
-const fileArg = process.argv.find(a => a.startsWith('--file='));
+const fileArg = process.argv.find(arg => arg.startsWith('--file='));
 const ENV_FILE = process.env.RESUME_FILE;
 const RESUME_FILE_PATH = fileArg ? fileArg.split('=')[1] : (ENV_FILE || './resume_es.json');
+const OUTPUT_DIR = './pdf';
 
 const generatePdf = async () => {
   try {
@@ -15,10 +15,12 @@ const generatePdf = async () => {
 
     const baseName = path.basename(RESUME_FILE_PATH, '.json');
     const suffix = baseName.endsWith('_en') ? '_en' : (baseName.endsWith('_es') ? '_es' : '');
-    const pdfFileName = `${resumeData.basics.name.replace(/ /g, '_')}_CV_mobile${suffix}.pdf`;
-    const pdfOutputPath = path.resolve(process.cwd(), pdfFileName);
+    const pdfFileName = `${resumeData.basics.name.replace(/ /g, '_')}_CV${suffix}.pdf`;
+    const pdfOutputPath = path.resolve(process.cwd(), OUTPUT_DIR, pdfFileName);
 
-    console.log('🎨 Renderizando tema...');
+    mkdirSync(OUTPUT_DIR, { recursive: true });
+
+    console.log('🎨 Renderizando tema propio...');
     const htmlContent = render(resumeData);
 
     console.log('🚀 Iniciando Puppeteer...');
@@ -28,40 +30,40 @@ const generatePdf = async () => {
     });
     const page = await browser.newPage();
 
-    // Configurar viewport para un dispositivo móvil para activar los estilos responsivos
     await page.setViewport({
-      width: 500, // Ancho para activar estilos responsivos
-      height: 800, // Altura inicial, se ajustará al contenido
-      isMobile: true,
-      hasTouch: true,
-      deviceScaleFactor: 2 // Simula un DPI alto de móvil
+      width: 816,
+      height: 1056,
+      deviceScaleFactor: 1
     });
 
     console.log('📄 Estableciendo contenido HTML...');
     await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
 
-    // No emulamos 'print' para usar los estilos responsivos del media query `@media (max-width: 600px)`
+    console.log('🖨️  Emulando media para impresión...');
+    await page.emulateMediaType('print');
 
-    console.log('📄 Generando PDF para móvil...');
+    console.log('📄 Generando PDF...');
     await page.pdf({
       path: pdfOutputPath,
-      width: '500px', // Ancho del PDF
+      format: 'Letter',
       printBackground: true,
+      preferCSSPageSize: true,
       displayHeaderFooter: false,
       margin: {
-        top: '1cm',
-        right: '1cm',
-        bottom: '1cm',
-        left: '1cm'
-      }
+        top: '0.8cm',
+        right: '0.8cm',
+        bottom: '0.8cm',
+        left: '0.8cm'
+      },
+      scale: 1
     });
 
-    console.log('✅ ¡PDF para móvil generado exitosamente!');
+    console.log('✅ ¡PDF generado exitosamente!');
     console.log(`📂 Archivo generado en: ${pdfOutputPath}`);
 
     await browser.close();
   } catch (error) {
-    console.error('❌ Error al generar el PDF para móvil:', error);
+    console.error('❌ Error al generar el PDF:', error);
     process.exit(1);
   }
 };
