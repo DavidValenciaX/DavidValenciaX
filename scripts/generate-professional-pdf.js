@@ -1,5 +1,5 @@
 import { createRequire } from 'module';
-import { mkdirSync, readFileSync } from 'fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'fs';
 import puppeteer from 'puppeteer';
 import path from 'path';
 import { pathToFileURL } from 'url';
@@ -10,6 +10,7 @@ const fileArg = process.argv.find(arg => arg.startsWith('--file='));
 const ENV_FILE = process.env.RESUME_FILE;
 const RESUME_FILE_PATH = fileArg ? fileArg.split('=')[1] : (ENV_FILE || './resume_es.json');
 const OUTPUT_DIR = './pdf';
+const HTML_OUTPUT_DIR = './html';
 const PROFESSIONAL_THEME_PATH = './professional-theme.cjs';
 
 const generatePdf = async () => {
@@ -24,16 +25,17 @@ const generatePdf = async () => {
 
     const baseName = path.basename(RESUME_FILE_PATH, '.json');
     const suffix = baseName.endsWith('_en') ? '_en' : (baseName.endsWith('_es') ? '_es' : '');
+    const htmlFileName = `resume${suffix || ''}_professional.html`;
     const pdfFileName = `${resumeData.basics.name.replace(/ /g, '_')}_CV${suffix}_professional.pdf`;
+    const htmlOutputPath = path.resolve(process.cwd(), HTML_OUTPUT_DIR, htmlFileName);
     const pdfOutputPath = path.resolve(process.cwd(), OUTPUT_DIR, pdfFileName);
 
+    mkdirSync(HTML_OUTPUT_DIR, { recursive: true });
     mkdirSync(OUTPUT_DIR, { recursive: true });
 
     console.log('🎨 Renderizando tema Professional...');
-    const htmlBaseUrl = pathToFileURL(path.resolve(process.cwd(), 'html') + path.sep).href;
-    const htmlContent = professionalTheme
-      .render(resumeData)
-      .replace('<head>', `<head><base href="${htmlBaseUrl}">`);
+    const htmlContent = professionalTheme.render(resumeData);
+    writeFileSync(htmlOutputPath, htmlContent, 'utf-8');
 
     console.log('🚀 Iniciando Puppeteer...');
     const browser = await puppeteer.launch({
@@ -48,12 +50,18 @@ const generatePdf = async () => {
       deviceScaleFactor: 1
     });
 
-    console.log('📄 Estableciendo contenido HTML...');
-    await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
-    await page.evaluateHandle('document.fonts.ready');
+    console.log('📄 Abriendo HTML Professional generado...');
+    await page.goto(pathToFileURL(htmlOutputPath).href, { waitUntil: 'networkidle0' });
 
     console.log('🖨️  Emulando media para impresión...');
     await page.emulateMediaType('print');
+    await page.evaluate(async () => {
+      await document.fonts.ready;
+
+      if (!document.fonts.check('12px LatinModern')) {
+        throw new Error('LatinModern font was not loaded before PDF generation');
+      }
+    });
 
     console.log('📄 Generando PDF Professional...');
     await page.pdf({
