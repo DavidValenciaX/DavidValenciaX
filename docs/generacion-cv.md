@@ -21,7 +21,6 @@ Los archivos generados no se guardan en la raiz del proyecto:
 
 - `html/`: versiones HTML.
 - `pdf/`: versiones PDF normales.
-- `pdf_mobile/`: versiones PDF moviles.
 
 Estas carpetas estan ignoradas por git porque son artefactos generados.
 
@@ -77,15 +76,6 @@ npm run pdf:stackoverflow:es
 npm run pdf:stackoverflow:en
 ```
 
-## Version PDF Movil
-
-La version movil usa el tema propio con viewport reducido:
-
-```bash
-npm run pdf:mobile:es
-npm run pdf:mobile:en
-```
-
 ## Archivos Generados Esperados
 
 Ejemplos de nombres de salida:
@@ -102,8 +92,6 @@ Ejemplos de nombres de salida:
 - `pdf/Oscar_David_Valencia_Alvarez_CV_en_professional.pdf`
 - `pdf/Oscar_David_Valencia_Alvarez_CV_es_stackoverflow.pdf`
 - `pdf/Oscar_David_Valencia_Alvarez_CV_en_stackoverflow.pdf`
-- `pdf_mobile/Oscar_David_Valencia_Alvarez_CV_mobile_es.pdf`
-- `pdf_mobile/Oscar_David_Valencia_Alvarez_CV_mobile_en.pdf`
 
 ## Notas Sobre el Tema Professional
 
@@ -135,7 +123,6 @@ npm run html:stackoverflow:es
 npm run pdf:es
 npm run pdf:professional:es
 npm run pdf:stackoverflow:es
-npm run pdf:mobile:es
 ```
 
 Para ingles, usa los comandos equivalentes terminados en `:en`.
