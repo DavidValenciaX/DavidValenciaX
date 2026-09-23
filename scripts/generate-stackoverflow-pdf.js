@@ -6,7 +6,7 @@ import { render } from 'jsonresume-theme-stackoverflow';
 const fileArg = process.argv.find(arg => arg.startsWith('--file='));
 const ENV_FILE = process.env.RESUME_FILE;
 const RESUME_FILE_PATH = fileArg ? fileArg.split('=')[1] : (ENV_FILE || './resume_es.json');
-const OUTPUT_DIR = './pdf';
+const OUTPUT_DIR = path.join('.', 'pdf', 'stackoverflow');
 
 const generatePdf = async () => {
   try {
@@ -16,7 +16,7 @@ const generatePdf = async () => {
     const baseName = path.basename(RESUME_FILE_PATH, '.json');
     const suffix = baseName.endsWith('_en') ? '_en' : (baseName.endsWith('_es') ? '_es' : '');
     const language = suffix === '_es' ? 'es' : 'en';
-    const pdfFileName = `${resumeData.basics.name.replace(/ /g, '_')}_CV${suffix}_stackoverflow.pdf`;
+    const pdfFileName = `${resumeData.basics.name.replace(/\s+/g, '_')}_CV${suffix}.pdf`;
     const pdfOutputPath = path.resolve(process.cwd(), OUTPUT_DIR, pdfFileName);
 
     mkdirSync(OUTPUT_DIR, { recursive: true });

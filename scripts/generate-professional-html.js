@@ -7,7 +7,7 @@ const require = createRequire(import.meta.url);
 const fileArg = process.argv.find(arg => arg.startsWith('--file='));
 const ENV_FILE = process.env.RESUME_FILE;
 const RESUME_FILE_PATH = fileArg ? fileArg.split('=')[1] : (ENV_FILE || './resume_es.json');
-const OUTPUT_DIR = './html';
+const OUTPUT_DIR = path.join('.', 'html', 'professional');
 const PROFESSIONAL_THEME_PATH = './professional-theme.cjs';
 
 try {
@@ -21,7 +21,8 @@ try {
 
   const baseName = path.basename(RESUME_FILE_PATH, '.json');
   const suffix = baseName.endsWith('_en') ? '_en' : (baseName.endsWith('_es') ? '_es' : '');
-  const outputFilePath = path.join(OUTPUT_DIR, `resume${suffix || ''}_professional.html`);
+  const resumeFileName = `${resumeData.basics.name.replace(/\s+/g, '_')}_CV${suffix}.html`;
+  const outputFilePath = path.join(OUTPUT_DIR, resumeFileName);
 
   console.log('🎨 Renderizando tema Professional...');
   const htmlOutput = professionalTheme.render(resumeData);

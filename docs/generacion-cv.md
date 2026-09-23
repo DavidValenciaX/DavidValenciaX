@@ -20,7 +20,11 @@ npm run validate
 Los archivos generados no se guardan en la raiz del proyecto:
 
 - `html/`: versiones HTML.
-- `pdf/`: versiones PDF normales.
+- `pdf/`: versiones PDF.
+
+Cada estilo se genera dentro de su propia carpeta (`normal/`, `professional/` o
+`stackoverflow/`) y los archivos mantienen el mismo nombre base, sin el sufijo
+del estilo.
 
 Estas carpetas estan ignoradas por git porque son artefactos generados.
 
@@ -80,18 +84,18 @@ npm run pdf:stackoverflow:en
 
 Ejemplos de nombres de salida:
 
-- `html/resume_es.html`
-- `html/resume_en.html`
-- `html/resume_es_professional.html`
-- `html/resume_en_professional.html`
-- `html/resume_es_stackoverflow.html`
-- `html/resume_en_stackoverflow.html`
-- `pdf/Oscar_David_Valencia_Alvarez_CV_es.pdf`
-- `pdf/Oscar_David_Valencia_Alvarez_CV_en.pdf`
-- `pdf/Oscar_David_Valencia_Alvarez_CV_es_professional.pdf`
-- `pdf/Oscar_David_Valencia_Alvarez_CV_en_professional.pdf`
-- `pdf/Oscar_David_Valencia_Alvarez_CV_es_stackoverflow.pdf`
-- `pdf/Oscar_David_Valencia_Alvarez_CV_en_stackoverflow.pdf`
+- `html/normal/Oscar_David_Valencia_Alvarez_CV_es.html`
+- `html/normal/Oscar_David_Valencia_Alvarez_CV_en.html`
+- `html/professional/Oscar_David_Valencia_Alvarez_CV_es.html`
+- `html/professional/Oscar_David_Valencia_Alvarez_CV_en.html`
+- `html/stackoverflow/Oscar_David_Valencia_Alvarez_CV_es.html`
+- `html/stackoverflow/Oscar_David_Valencia_Alvarez_CV_en.html`
+- `pdf/normal/Oscar_David_Valencia_Alvarez_CV_es.pdf`
+- `pdf/normal/Oscar_David_Valencia_Alvarez_CV_en.pdf`
+- `pdf/professional/Oscar_David_Valencia_Alvarez_CV_es.pdf`
+- `pdf/professional/Oscar_David_Valencia_Alvarez_CV_en.pdf`
+- `pdf/stackoverflow/Oscar_David_Valencia_Alvarez_CV_es.pdf`
+- `pdf/stackoverflow/Oscar_David_Valencia_Alvarez_CV_en.pdf`
 
 ## Notas Sobre el Tema Professional
 
@@ -106,10 +110,10 @@ Ese comando crea `scripts/professional-theme.cjs`, que esta ignorado por git por
 El tema usa las fuentes Latin Modern ubicadas en `fonts/`. El HTML Professional debe apuntar a rutas como:
 
 ```css
-url("../fonts/lmroman10-regular.otf")
+url("../../fonts/lmroman10-regular.otf")
 ```
 
-Si el PDF Professional no respeta la fuente, primero revisa que el HTML en `html/resume_es_professional.html` este cargando bien esas rutas.
+Si el PDF Professional no respeta la fuente, primero revisa que el HTML en `html/professional/Oscar_David_Valencia_Alvarez_CV_es.html` este cargando bien las rutas `../../fonts/...`.
 
 ## Flujo Recomendado
 

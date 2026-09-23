@@ -6,7 +6,7 @@ import path from 'path';
 const fileArg = process.argv.find(arg => arg.startsWith('--file='));
 const ENV_FILE = process.env.RESUME_FILE;
 const RESUME_FILE_PATH = fileArg ? fileArg.split('=')[1] : (ENV_FILE || './resume_es.json');
-const OUTPUT_DIR = './pdf';
+const OUTPUT_DIR = path.join('.', 'pdf', 'normal');
 
 const generatePdf = async () => {
   try {

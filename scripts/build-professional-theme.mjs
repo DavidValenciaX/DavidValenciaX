@@ -31,12 +31,12 @@ await build({
 });
 
 // Patch the bundled file to resolve fonts from the repo-level fonts/ folder.
-// Generated HTML lives in html/, so "../fonts/..." points to the right place.
+// Generated HTML lives in html/professional/, so "../../fonts/..." points to the right place.
 try {
   let content = fs.readFileSync(outFile, 'utf-8');
   content = content
-    .replace(/"\/fonts\//g, '"../fonts/')
-    .replace(/"fonts\//g, '"../fonts/')
+    .replace(/"\/fonts\//g, '"../../fonts/')
+    .replace(/"fonts\//g, '"../../fonts/')
     .replace(/lmsans10-regular\.otf/g, 'lmroman10-regular.otf')
     .replace(/lmsans10-bold\.otf/g, 'lmroman10-bold.otf')
     .replace(/lmsans10-italic\.otf/g, 'lmroman10-italic.otf');

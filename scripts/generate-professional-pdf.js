@@ -9,8 +9,8 @@ const require = createRequire(import.meta.url);
 const fileArg = process.argv.find(arg => arg.startsWith('--file='));
 const ENV_FILE = process.env.RESUME_FILE;
 const RESUME_FILE_PATH = fileArg ? fileArg.split('=')[1] : (ENV_FILE || './resume_es.json');
-const OUTPUT_DIR = './pdf';
-const HTML_OUTPUT_DIR = './html';
+const OUTPUT_DIR = path.join('.', 'pdf', 'professional');
+const HTML_OUTPUT_DIR = path.join('.', 'html', 'professional');
 const PROFESSIONAL_THEME_PATH = './professional-theme.cjs';
 
 const generatePdf = async () => {
@@ -25,8 +25,9 @@ const generatePdf = async () => {
 
     const baseName = path.basename(RESUME_FILE_PATH, '.json');
     const suffix = baseName.endsWith('_en') ? '_en' : (baseName.endsWith('_es') ? '_es' : '');
-    const htmlFileName = `resume${suffix || ''}_professional.html`;
-    const pdfFileName = `${resumeData.basics.name.replace(/ /g, '_')}_CV${suffix}_professional.pdf`;
+    const resumeFileBase = `${resumeData.basics.name.replace(/\s+/g, '_')}_CV${suffix}`;
+    const htmlFileName = `${resumeFileBase}.html`;
+    const pdfFileName = `${resumeFileBase}.pdf`;
     const htmlOutputPath = path.resolve(process.cwd(), HTML_OUTPUT_DIR, htmlFileName);
     const pdfOutputPath = path.resolve(process.cwd(), OUTPUT_DIR, pdfFileName);
 
