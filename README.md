@@ -34,9 +34,10 @@ Here are some of the technologies I've been working with:
 
 ### Piyion — Backend Developer (Dec 2025 – Present) · Remote
 
-Backend development for an omnichannel conversational support, social media management, and mass advertising campaign platform. Contributed to scalable services, data flows, and cloud-integrated product features.
+Backend and frontend development for an omnichannel conversational support, social media management, and mass advertising campaign platform. Contributed to scalable services, React and JavaScript interfaces, data flows, and cloud-integrated product features.
 
 - Developed backend services with Python for omnichannel chat center features
+- Developed and maintained frontend interfaces with React and JavaScript for platform features
 - Integrated and managed data using Firebase and Firestore
 - Worked with Google Cloud services and Kubernetes-based deployments
 - Implemented automated tests with Pytest to improve backend reliability

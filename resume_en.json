@@ -31,9 +31,10 @@
       "position": "Backend Developer",
       "location": "Remote",
       "startDate": "2025-12",
-      "description": "Backend development for an omnichannel conversational support, social media management, and mass advertising campaign platform. Contributed to scalable services, data flows, and cloud-integrated product features.",
+      "description": "Backend and frontend development for an omnichannel conversational support, social media management, and mass advertising campaign platform. Contributed to scalable services, React and JavaScript interfaces, data flows, and cloud-integrated product features.",
       "highlights": [
         "Developed backend services with Python for omnichannel chat center features",
+        "Developed and maintained frontend interfaces with React and JavaScript for platform features",
         "Integrated and managed data using Firebase and Firestore",
         "Worked with Google Cloud services and Kubernetes-based deployments",
         "Implemented automated tests with Pytest to improve backend reliability"
