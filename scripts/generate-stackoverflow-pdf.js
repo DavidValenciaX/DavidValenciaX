@@ -1,7 +1,7 @@
 import { mkdirSync, readFileSync } from 'fs';
 import path from 'path';
 import puppeteer from 'puppeteer';
-import { render } from 'jsonresume-theme-stackoverflow';
+import { renderStackOverflowResume } from './render-stackoverflow-resume.js';
 import { embedImage } from '../index.js';
 
 const fileArg = process.argv.find(arg => arg.startsWith('--file='));
@@ -24,7 +24,7 @@ const generatePdf = async () => {
     mkdirSync(OUTPUT_DIR, { recursive: true });
 
     console.log('🎨 Renderizando tema Stack Overflow...');
-    const htmlContent = render(resumeData, { language });
+    const htmlContent = renderStackOverflowResume(resumeData, language);
 
     console.log('🚀 Iniciando Puppeteer...');
     const browser = await puppeteer.launch({

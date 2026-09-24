@@ -1,4 +1,4 @@
-import { build } from 'esbuild';
+import { transform } from 'esbuild';
 import fs from 'fs';
 import path from 'path';
 
@@ -18,32 +18,51 @@ if (!fs.existsSync(entry)) {
 const outDir = path.dirname(outFile);
 fs.mkdirSync(outDir, { recursive: true });
 
-await build({
-  entryPoints: [entry],
-  outfile: outFile,
-  bundle: true,
-  platform: 'node',
-  format: 'cjs',
-  target: ['node18'],
-  loader: { '.js': 'jsx' },
-  jsx: 'automatic',
-  jsxImportSource: 'react'
-});
-
-// Patch the bundled file to resolve fonts from the repo-level fonts/ folder.
-// Generated HTML lives in html/professional/, so "../../fonts/..." points to the right place.
-try {
-  let content = fs.readFileSync(outFile, 'utf-8');
-  content = content
+// Generated HTML lives in html/professional/, so "../../fonts/..." reaches fonts/.
+const patchFontPaths = (content) => content
     .replace(/"\/fonts\//g, '"../../fonts/')
     .replace(/"fonts\//g, '"../../fonts/')
     .replace(/lmsans10-regular\.otf/g, 'lmroman10-regular.otf')
     .replace(/lmsans10-bold\.otf/g, 'lmroman10-bold.otf')
     .replace(/lmsans10-italic\.otf/g, 'lmroman10-italic.otf');
-  fs.writeFileSync(outFile, content, 'utf-8');
-  console.log('Successfully patched professional theme font paths.');
-} catch (error) {
-  console.error('Error patching font paths:', error);
-}
+
+// Compile each theme file separately. Node resolves the installed dependencies at
+// runtime, so generation does not depend on esbuild traversing parent directories.
+const buildTheme = async () => {
+  const runtimeDir = path.resolve('build', 'professional-theme-runtime');
+  const sourceDir = path.dirname(path.resolve(entry));
+
+  const compileDirectory = async (source, destination) => {
+    fs.mkdirSync(destination, { recursive: true });
+
+    for (const item of fs.readdirSync(source, { withFileTypes: true })) {
+      const sourcePath = path.join(source, item.name);
+      const destinationPath = path.join(destination, item.name);
+
+      if (item.isDirectory()) {
+        await compileDirectory(sourcePath, destinationPath);
+      } else if (item.isFile() && item.name.endsWith('.js')) {
+        const content = patchFontPaths(fs.readFileSync(sourcePath, 'utf-8'));
+        const result = await transform(content, {
+          loader: 'jsx',
+          format: 'cjs',
+          target: 'node18',
+          jsx: 'automatic',
+          jsxImportSource: 'react'
+        });
+        fs.writeFileSync(destinationPath, result.code, 'utf-8');
+      }
+    }
+  };
+
+  await compileDirectory(sourceDir, runtimeDir);
+  fs.writeFileSync(path.join(runtimeDir, 'package.json'), '{"type":"commonjs"}\n');
+
+  const runtimeEntry = path.join(runtimeDir, 'index.js');
+  const requirePath = path.relative(path.dirname(path.resolve(outFile)), runtimeEntry).replace(/\\/g, '/');
+  fs.writeFileSync(outFile, `module.exports = require(${JSON.stringify(requirePath)});\n`, 'utf-8');
+};
+
+await buildTheme();
 
 console.log(`Built professional theme to ${outFile}`);

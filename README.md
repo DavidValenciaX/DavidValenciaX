@@ -55,6 +55,18 @@ Development and implementation of an e-commerce website for a wholesale company,
 
 ## 🚀 Projects
 
+### Edificio Cardamomo
+
+- **Description:** Responsive website and direct booking system for serviced apartments in Neiva, Huila, with availability synchronized through Booking.com and Airbnb iCal calendars.
+- **Highlights:**
+  - Built a responsive experience to explore apartments and book directly
+  - Managed guest authentication, reservations, and availability with Firebase Authentication and Cloud Firestore
+  - Automated calendar synchronization with Cloud Scheduler and deployed the backend to Google Cloud Run
+- **Tech Stack:** React, TypeScript, Node.js, Firebase Authentication, Cloud Firestore, Firebase Hosting, Google Cloud Run, Cloud Scheduler, iCal
+- **Duration:** Jun 2026 - Aug 2026
+- **[Live Demo](https://edificio-cardamomo.web.app/)**
+- **[GitHub Repository](https://github.com/DavidValenciaX/edificio-cardamomo)**
+
 ### Ascuita
 
 - **Description:** Voice agent companion designed as a personal conversational assistant for voice-based interaction on the web.

@@ -1,6 +1,6 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'fs';
 import path from 'path';
-import { render } from 'jsonresume-theme-stackoverflow';
+import { renderStackOverflowResume } from './render-stackoverflow-resume.js';
 import { embedImage } from '../index.js';
 
 const fileArg = process.argv.find(arg => arg.startsWith('--file='));
@@ -20,7 +20,7 @@ try {
   const outputFilePath = path.join(OUTPUT_DIR, resumeFileName);
 
   console.log('🎨 Renderizando tema Stack Overflow...');
-  const htmlOutput = render(resumeData, { language });
+  const htmlOutput = renderStackOverflowResume(resumeData, language);
 
   mkdirSync(OUTPUT_DIR, { recursive: true });
 
