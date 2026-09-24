@@ -1,3 +1,38 @@
+import { readFileSync } from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+const embedImage = (imagePath) => {
+  if (!imagePath) return null;
+
+  if (imagePath.startsWith('http://') || imagePath.startsWith('https://') || imagePath.startsWith('data:')) {
+    return imagePath;
+  }
+
+  try {
+    const fullPath = path.resolve(__dirname, imagePath);
+    const buffer = readFileSync(fullPath);
+
+    let mimeType = 'image/jpeg';
+    if (buffer[0] === 0x89 && buffer[1] === 0x50) {
+      mimeType = 'image/png';
+    } else if (buffer[0] === 0xFF && buffer[1] === 0xD8) {
+      mimeType = 'image/jpeg';
+    } else if (buffer[0] === 0x47 && buffer[1] === 0x49) {
+      mimeType = 'image/gif';
+    } else if (buffer[0] === 0x52 && buffer[1] === 0x49) {
+      mimeType = 'image/webp';
+    }
+
+    return `data:${mimeType};base64,${buffer.toString('base64')}`;
+  } catch {
+    console.warn(`⚠️  No se pudo cargar la imagen local: ${imagePath}`);
+    return imagePath;
+  }
+};
+
 // Constantes de estilo
 const COLORS = {
   PRIMARY: '#2c3e50',
@@ -94,9 +129,6 @@ const CSS_STYLES = `
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.3s ease;
       background-color: #f8f9fa;
-      image-rendering: auto;
-      image-rendering: -webkit-optimize-contrast;
-      image-rendering: pixelated;
     }
     
     .profile-image:hover {
@@ -631,7 +663,7 @@ const renderHeader = (basics) => {
   
   const profileImage = image ? `
     <img 
-      src="${image}" 
+      src="${embedImage(image)}" 
       alt="Foto de perfil de ${name || 'Usuario'}"
       class="profile-image"
       loading="lazy"
@@ -868,4 +900,4 @@ const render = (resume) => {
   `;
 };
 
-export { render };
+export { render, embedImage };

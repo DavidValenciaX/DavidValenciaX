@@ -1,6 +1,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'fs';
 import path from 'path';
 import { render } from 'jsonresume-theme-stackoverflow';
+import { embedImage } from '../index.js';
 
 const fileArg = process.argv.find(arg => arg.startsWith('--file='));
 const ENV_FILE = process.env.RESUME_FILE;
@@ -14,6 +15,7 @@ const language = suffix === '_es' ? 'es' : 'en';
 try {
   console.log(`📖 Leyendo ${RESUME_FILE_PATH}...`);
   const resumeData = JSON.parse(readFileSync(RESUME_FILE_PATH, 'utf-8'));
+  resumeData.basics.image = embedImage(resumeData.basics.image);
   const resumeFileName = `${resumeData.basics.name.replace(/\s+/g, '_')}_CV${suffix}.html`;
   const outputFilePath = path.join(OUTPUT_DIR, resumeFileName);
 
