@@ -167,6 +167,34 @@
   ],
   "projects": [
     {
+      "name": "Edificio Cardamomo",
+      "description": "Responsive website and direct booking system for Edificio Cardamomo's serviced apartments in Neiva. It presents the apartments, supports availability lookup and direct reservations, and synchronizes iCal calendars with Booking.com and Airbnb.",
+      "highlights": [
+        "Built a responsive full-stack web experience for browsing apartments and booking directly",
+        "Implemented authentication with Firebase Authentication and stored reservations and availability in Cloud Firestore",
+        "Scheduled availability synchronization from Booking.com and Airbnb iCal calendars with Cloud Scheduler",
+        "Deployed the website to Firebase Hosting and the backend to Google Cloud Run"
+      ],
+      "keywords": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Firebase Authentication",
+        "Cloud Firestore",
+        "Firebase Hosting",
+        "Google Cloud Run",
+        "Cloud Scheduler",
+        "iCal"
+      ],
+      "startDate": "2026-06",
+      "endDate": "2026-08",
+      "url": "https://edificio-cardamomo.web.app/",
+      "repository": "https://github.com/DavidValenciaX/edificio-cardamomo",
+      "roles": ["Full-Stack Developer"],
+      "entity": "Commercial Project",
+      "type": "website"
+    },
+    {
       "name": "Ascuita",
       "description": "Voice agent companion designed as a personal conversational assistant for voice-based interaction on the web.",
       "highlights": [
