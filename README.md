@@ -8,7 +8,7 @@
 
 ## 👨‍💻 About Me
 
-Full-stack software engineer with backend developer experience in omnichannel platforms, e-commerce, and web products. Proficient in JavaScript, Node.js, Express.js, Python, Google Cloud, Firebase, Firestore, Kubernetes, MongoDB, software architecture, automated testing, and CI/CD. Capable of designing and deploying scalable products using agile methodologies and version control.
+Full-stack software engineer with backend developer experience in omnichannel platforms, e-commerce, and web products. Proficient in JavaScript, Node.js, Express.js, Python, Google Cloud, Firebase, Firestore, Kubernetes, MongoDB, SQL, software architecture, automated testing, and CI/CD. Capable of designing and deploying scalable products using agile methodologies and version control.
 
 ---
 
@@ -21,7 +21,7 @@ Here are some of the technologies I've been working with:
 | **Frontend**      | ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)                                                                                                                            |
 | **Backend**       | ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)                                                                                                                          |
 | **Documentation** | ![Swagger](https://img.shields.io/badge/-Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black) |
-| **Databases**     | ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![Firestore](https://img.shields.io/badge/-Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black)                                                                                                                                                                                                                                                                                             |
+| **Databases**     | ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=databricks&logoColor=white) ![Firestore](https://img.shields.io/badge/-Firestore-FFCA28?style=flat-square&logo=firebase&logoColor=black)                                                                                                                                                                                                                                                                                             |
 | **Testing**       | ![Jest](https://img.shields.io/badge/-Jest-C21325?style=flat-square&logo=jest&logoColor=white) ![Pytest](https://img.shields.io/badge/-Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)                                                                                                                 |
 | **CI/CD**         | ![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white) ![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)                                                                                 |
 | **Cloud & BaaS** | ![Google Cloud](https://img.shields.io/badge/-Google%20Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white) ![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black) |
@@ -38,7 +38,7 @@ Backend and frontend development for an omnichannel conversational support, soci
 
 - Developed backend services with Python for omnichannel chat center features
 - Developed and maintained frontend interfaces with React and JavaScript for platform features
-- Integrated and managed data using Firebase and Firestore
+- Integrated and managed databases
 - Worked with Google Cloud services and Kubernetes-based deployments
 - Implemented automated tests with Pytest to improve backend reliability
 - Website: <https://piyion.com/>
@@ -53,19 +53,16 @@ Development and implementation of an e-commerce website for a wholesale company,
 - Integration of payment gateway and automatic transactional emails
 - Website: <https://distrimarcassjg.com/>
 
+### Edificio Cardamomo — Full-Stack Developer (Jun 2026 – Aug 2026) · Neiva, Colombia
+
+Responsive website and direct booking system for serviced apartments in Neiva, Huila, with availability synchronized through Booking.com and Airbnb iCal calendars.
+
+- Built a responsive experience to explore apartments and book directly
+- Managed guest authentication and databases for reservations and availability
+- Automated calendar synchronization with Cloud Scheduler and deployed the backend to Google Cloud Run
+- Website: <https://edificio-cardamomo.web.app/>
+
 ## 🚀 Projects
-
-### Edificio Cardamomo
-
-- **Description:** Responsive website and direct booking system for serviced apartments in Neiva, Huila, with availability synchronized through Booking.com and Airbnb iCal calendars.
-- **Highlights:**
-  - Built a responsive experience to explore apartments and book directly
-  - Managed guest authentication, reservations, and availability with Firebase Authentication and Cloud Firestore
-  - Automated calendar synchronization with Cloud Scheduler and deployed the backend to Google Cloud Run
-- **Tech Stack:** React, TypeScript, Node.js, Firebase Authentication, Cloud Firestore, Firebase Hosting, Google Cloud Run, Cloud Scheduler, iCal
-- **Duration:** Jun 2026 - Aug 2026
-- **[Live Demo](https://edificio-cardamomo.web.app/)**
-- **[GitHub Repository](https://github.com/DavidValenciaX/edificio-cardamomo)**
 
 ### Ascuita
 
@@ -102,18 +99,6 @@ Development and implementation of an e-commerce website for a wholesale company,
 - **Duration:** Aug 2024 - Jul 2025
 - **[Live Demo](https://print-nelsy.vercel.app/)**
 - **[GitHub Repository](https://github.com/DavidValenciaX/printNelsy)**
-
-### Distri Marcas SJG
-
-- **Description:** Wholesale e-commerce platform with B2B catalog, inventory management, and secure payments.
-- **Highlights:**
-  - Development with WordPress and WooCommerce
-  - Performance optimization
-  - Inventory management
-  - Payment gateway integration
-- **Tech Stack:** WordPress, WooCommerce, E-commerce, Performance Optimization
-- **Duration:** Jul 2025 - Aug 2025
-- **[Live Site](https://distrimarcassjg.com/)**
 
 ---
 

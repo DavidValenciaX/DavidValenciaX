@@ -6,7 +6,7 @@
     "email": "davidvalencia0526@gmail.com",
     "phone": "+57 317 374 3023",
     "url": "https://davidvalencia.site/",
-    "summary": "Full-stack software engineer with backend developer experience in omnichannel platforms, e-commerce, and web products. Proficient in JavaScript, Node.js, Express.js, Python, Google Cloud, Firebase, Firestore, Kubernetes, MongoDB, software architecture, automated testing, and CI/CD. Capable of designing and deploying scalable products using agile methodologies and version control.",
+    "summary": "Full-stack software engineer with backend developer experience in omnichannel platforms, e-commerce, and web products. Proficient in JavaScript, Node.js, Express.js, Python, Google Cloud, Firebase, Firestore, Kubernetes, MongoDB, SQL, software architecture, automated testing, and CI/CD. Capable of designing and deploying scalable products using agile methodologies and version control.",
     "location": {
       "city": "Neiva",
       "countryCode": "CO",
@@ -35,11 +35,26 @@
       "highlights": [
         "Developed backend services with Python for omnichannel chat center features",
         "Developed and maintained frontend interfaces with React and JavaScript for platform features",
-        "Integrated and managed data using Firebase and Firestore",
+        "Integrated and managed databases",
         "Worked with Google Cloud services and Kubernetes-based deployments",
         "Implemented automated tests with Pytest to improve backend reliability"
       ],
       "url": "https://piyion.com/"
+    },
+    {
+      "name": "Edificio Cardamomo",
+      "position": "Full-Stack Developer",
+      "location": "Neiva, Colombia",
+      "startDate": "2026-06",
+      "endDate": "2026-08",
+      "description": "Responsive website and direct booking system for Edificio Cardamomo's serviced apartments in Neiva. It presents the apartments, supports availability lookup and direct reservations, and synchronizes iCal calendars with Booking.com and Airbnb.",
+      "highlights": [
+        "Built a responsive full-stack web experience for browsing apartments and booking directly",
+        "Managed authentication and databases for reservations and availability",
+        "Scheduled availability synchronization from Booking.com and Airbnb iCal calendars with Cloud Scheduler",
+        "Deployed the website to Firebase Hosting and the backend to Google Cloud Run"
+      ],
+      "url": "https://edificio-cardamomo.web.app/"
     },
     {
       "name": "Distri Marcas SJG",
@@ -112,47 +127,78 @@
     {
       "name": "Frontend",
       "level": "",
-      "keywords": ["HTML", "CSS", "JavaScript", "React"]
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React"
+      ]
     },
     {
       "name": "Backend",
       "level": "",
-      "keywords": ["Node.js", "Express", "Python"]
+      "keywords": [
+        "Node.js",
+        "Express",
+        "Python"
+      ]
     },
     {
       "name": "Documentation",
       "level": "",
-      "keywords": ["Swagger"]
+      "keywords": [
+        "Swagger"
+      ]
     },
     {
       "name": "Databases",
       "level": "",
-      "keywords": ["PostgreSQL", "MongoDB", "Firestore"]
+      "keywords": [
+        "PostgreSQL",
+        "MongoDB",
+        "SQL",
+        "Firestore"
+      ]
     },
     {
       "name": "Testing",
       "level": "",
-      "keywords": ["Jest", "Pytest"]
+      "keywords": [
+        "Jest",
+        "Pytest"
+      ]
     },
     {
       "name": "CI/CD",
       "level": "",
-      "keywords": ["GitHub Actions", "Kubernetes"]
+      "keywords": [
+        "GitHub Actions",
+        "Kubernetes"
+      ]
     },
     {
       "name": "Version Control",
       "level": "",
-      "keywords": ["Git", "GitHub"]
+      "keywords": [
+        "Git",
+        "GitHub"
+      ]
     },
     {
       "name": "Cloud & BaaS",
       "level": "",
-      "keywords": ["Google Cloud", "Firebase"]
+      "keywords": [
+        "Google Cloud",
+        "Firebase"
+      ]
     },
     {
       "name": "E-commerce & CMS",
       "level": "",
-      "keywords": ["WordPress", "WooCommerce"]
+      "keywords": [
+        "WordPress",
+        "WooCommerce"
+      ]
     }
   ],
   "languages": [
@@ -166,34 +212,6 @@
     }
   ],
   "projects": [
-    {
-      "name": "Edificio Cardamomo",
-      "description": "Responsive website and direct booking system for Edificio Cardamomo's serviced apartments in Neiva. It presents the apartments, supports availability lookup and direct reservations, and synchronizes iCal calendars with Booking.com and Airbnb.",
-      "highlights": [
-        "Built a responsive full-stack web experience for browsing apartments and booking directly",
-        "Implemented authentication with Firebase Authentication and stored reservations and availability in Cloud Firestore",
-        "Scheduled availability synchronization from Booking.com and Airbnb iCal calendars with Cloud Scheduler",
-        "Deployed the website to Firebase Hosting and the backend to Google Cloud Run"
-      ],
-      "keywords": [
-        "React",
-        "TypeScript",
-        "Node.js",
-        "Firebase Authentication",
-        "Cloud Firestore",
-        "Firebase Hosting",
-        "Google Cloud Run",
-        "Cloud Scheduler",
-        "iCal"
-      ],
-      "startDate": "2026-06",
-      "endDate": "2026-08",
-      "url": "https://edificio-cardamomo.web.app/",
-      "repository": "https://github.com/DavidValenciaX/edificio-cardamomo",
-      "roles": ["Full-Stack Developer"],
-      "entity": "Commercial Project",
-      "type": "website"
-    },
     {
       "name": "Ascuita",
       "description": "Voice agent companion designed as a personal conversational assistant for voice-based interaction on the web.",
@@ -212,7 +230,9 @@
       "endDate": "2026-05",
       "url": "https://ascuita.web.app/",
       "repository": "https://github.com/DavidValenciaX/ascuita",
-      "roles": ["Full-Stack Developer"],
+      "roles": [
+        "Full-Stack Developer"
+      ],
       "entity": "Personal Project",
       "type": "application"
     },
@@ -237,7 +257,9 @@
       "endDate": "2025-07",
       "url": "https://horarios-application.netlify.app/",
       "repository": "https://github.com/DavidValenciaX/horarios_app",
-      "roles": ["Full-Stack Developer"],
+      "roles": [
+        "Full-Stack Developer"
+      ],
       "entity": "Personal Project",
       "type": "application"
     },
@@ -261,31 +283,11 @@
       "endDate": "2025-07",
       "url": "https://print-nelsy.vercel.app/",
       "repository": "https://github.com/DavidValenciaX/printNelsy",
-      "roles": ["Frontend Developer"],
+      "roles": [
+        "Frontend Developer"
+      ],
       "entity": "Personal Project",
       "type": "application"
-    },
-    {
-      "name": "Distri Marcas SJG",
-      "description": "Wholesale e-commerce platform with B2B catalog, inventory management, and secure payments.",
-      "highlights": [
-        "Development with WordPress and WooCommerce",
-        "Performance optimization",
-        "Inventory management",
-        "Payment gateway integration"
-      ],
-      "keywords": [
-        "WordPress",
-        "WooCommerce",
-        "E-commerce",
-        "Performance Optimization"
-      ],
-      "startDate": "2025-07",
-      "endDate": "2025-08",
-      "url": "https://distrimarcassjg.com/",
-      "roles": ["Freelance Web Developer"],
-      "entity": "Commercial Project",
-      "type": "website"
     }
   ]
 }
